@@ -1,0 +1,86 @@
+.skills-section {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 34px;
+  }
+  
+  .skills-section h2 {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 2rem;
+  }
+  
+  .skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 700px;
+  }
+  
+  .skills-icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background-color: #333;
+    border-radius: 10px;
+    color: #ffd700;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .skills-icons div:hover {
+    transform: scale(1.1);
+    background-color: #444;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .skills-icons div span {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+  /* link buttons */
+  /* Button Styling */
+.a-btn {
+  margin-top: 18px;
+  background-color: #ffd700;
+  color: #222;
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from anchor tag */
+  display: inline-flex; /* Flexbox to align icon and text */
+  align-items: center; /* Vertically align items */
+  gap: 8px; /* Space between text and icon */
+}
+
+/* Link Button Hover Effect */
+.a-btn:hover {
+  background-color:#222;
+  color:#ffd700;
+  border: 1px solid #ffd700;
+}
+  @media (max-width: 768px) {
+    .skills-icons div {
+      width: 100px;
+      height: 100px;
+      font-size: 1.5rem;
+    }
+  
+    .skills-section h2 {
+      font-size: 2rem;
+    }
+  }
+  

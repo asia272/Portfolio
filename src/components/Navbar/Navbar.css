@@ -1,0 +1,174 @@
+
+/* Navbar container */
+.navbar {
+  height: 4.7rem;
+  width: 100vw;
+  /* background-color: #222; */
+  color: white;
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 10; /* Ensure it stays on top of other elements */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Logo styling */
+.logo h1 {
+  font-size: 2rem;
+  color:#ffd700;
+  font-weight: 500;
+}
+
+.logo h1::first-letter {
+  color:white;
+}
+
+/* Navigation items */
+.listItems {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+
+.item {
+  margin-left: 2rem;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative; /* Required for the ::after pseudo-element */
+  transition: color 0.3s ease-in; /* Smooth text color transition */
+}
+
+.item::after {
+  content: ''; /* Add an empty content for the pseudo-element */
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Position it slightly below the text */
+  width: 0; /* Start with zero width */
+  height: 4px; /* Height of the border */
+  background-color:#ffd700;
+  transition: width 0.4s ease-in-out; /* Smoothly animate the width */
+}
+
+.item:hover {
+  color:#ffd700; /* Change text color on hover */
+}
+
+.item:hover::after {
+  width: 100%; /* Expand the border from left to right */
+}
+
+.item:active {
+  color:#ffd700;
+}
+
+/* New nav-links wrapper styles */
+.nav-links {
+  display: flex; /* Flex layout for the inner container */
+  width: 100%; /* Ensure it takes the full width */
+}
+
+/* Hamburger menu icon */
+.menu-toggle {
+  display: none; /* Hidden on larger screens */
+  /* color: white; */
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  z-index: 15; /* Ensure it's above other elements */
+  margin: 0;
+}
+.menu-toggle:hover{
+  color: #ffd700;
+}
+.clone-btn{
+  position: absolute;
+  right: 8px;
+  top: 25px;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .item{
+    transition: color 0.2s ease-in;
+  }
+
+  .over-lay {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(253, 253, 253, 0.082); /* Semi-transparent black background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5; /* Ensure it appears above other elements but below the navbar */
+    overflow: hidden;
+  }
+  .navbar {
+    height: 5rem; /* Adjust height for smaller screens */
+    padding: 0 1.5rem;
+  }
+
+  .menu-toggle {
+    display: flex; /* Show the hamburger icon on smaller screens */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-toggle:hover {
+    transform: scale(1.1); /* Slightly enlarge the button */
+    border-radius: 50%; /* Make the button round */
+
+  }
+
+  /* Responsive styles for listItems */
+  .listItems {
+    flex-direction: column;
+    position: fixed;
+    align-items: flex-start;
+    top: 0;
+    left: -280px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease; /* Smooth menu appearance */
+    height: 100vh;
+    z-index: 1000;
+    width: 230px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background-color: #222;
+  }
+
+  .listItems.active {
+    left: 0; /* Slide into view */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%; /* Ensure the nav-links container stretches to full width */
+    padding: 0; /* Remove any default padding */
+    /* background-color: red; */
+    position: absolute;
+    top: 80px;
+  }
+
+  .item {
+    margin: 0.88rem 0; /* Add spacing between items */
+    font-size: 20px; /* Larger font size for better readability */
+    padding: 0.8rem 2rem; /* Adjust padding for larger clickable area */
+    width: 100%; /* Stretch the item to full width */
+  }
+
+  .item::after {
+    content: none; /* No border effect on smaller screens */
+  }
+
+  .item:hover {
+    /* box-shadow: 0 0 6px rgba(255, 255, 255, 0.5); */
+    background-color:#333;
+  }
+}

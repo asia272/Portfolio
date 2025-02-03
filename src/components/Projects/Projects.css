@@ -1,0 +1,20 @@
+.projects{
+    flex-direction: column;
+}
+.btn-box{
+    display: flex;
+    gap: 1rem;
+}
+.projectBtn{
+    background-color: #ffd700;
+    color: black;
+    border: 1px solid #ffd700;
+}
+.projectBtn:hover {
+    background-color: #222;
+    color: #ffd700;
+}
+.active{
+    background-color: beige;
+
+}

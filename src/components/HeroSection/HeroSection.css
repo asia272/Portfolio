@@ -1,0 +1,79 @@
+.hero-section {
+min-height: 100vh;
+}
+.container{
+    /* width: 100%; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* height: 100%; */
+    /* padding: 40px 30px; */
+}
+.hero-section img{
+  border-radius: 50%;
+}
+
+
+.content p{
+    font-size: 16px;
+}
+.content{
+    /* width: 300px; */
+    margin-right: 0px;
+    flex:0.6;
+}
+.name{
+    font-size: 38px;
+    font-weight: 500;
+}
+.img-box img{
+   width: 280px;
+}
+.type{
+    font-size: 28px;
+    font-weight: 500;
+}
+.type span{
+    color: #ffd700;;
+}
+
+  
+  .a-btn .hi {
+    transition: color 0.3s ease;
+  }
+ /* Icon Animation */
+  .a-btn:hover .hand-icon {
+    display: inline-block;
+    animation: wave 1s infinite ease-in-out;
+  }
+  
+  /* Hand Icon Styling */
+  .hand-icon {
+    display: inline-block;
+    transform: rotate(20deg); /* Initial rotation */
+  }
+  
+  /* Keyframes for Waving Effect */
+  @keyframes wave {
+    0%, 100% {
+      transform: translateX(-3px) rotate(20deg); /* Start and end with initial rotation */
+    }
+    50% {
+      transform: translateX(5px) rotate(35deg); /* Add more rotation during animation */
+    }
+  }
+
+
+  @media (max-width: 770px) {
+    .container{
+      flex-direction: column-reverse;
+    }
+    .img-box img{
+      width:100%;
+   }
+  }
+  @media (max-width:790px) {
+    .content{
+      flex: 1;
+    }
+  }

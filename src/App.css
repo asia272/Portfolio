@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  box-sizing: border-box;
+  line-height: 1.3;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; 
+}
+
+body {
+  margin: 0; /* Remove default margin */
+ background-color: #222;
+ color: white;
+  overflow-x: hidden;
+
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+
+}
+h1{
+  font-size: 38px;
+}
+a {
+  text-decoration: none;
+}
+
+button {
+  /* color: white; */
+  border: none;
+  border-radius: 16px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 14px;
+}
+img{
+  transition: all 0.3s ease;
+}
+img:hover{
+  transform: scale(1.1);
+}
+/* button:hover {
+  background-color: #ffd700;
+} */
+
+@media (max-width: 770px) {
+  .section {
+    min-height: auto;
+    padding: 80px 20px;
+  }
+}
+h2{
+  font-size: 2.5rem;
+  color: #ffd700;
+  animation: shadowPulse 2s infinite ease-in-out;
+  border-radius: 50%;
+  /* margin-bottom: 2rem; */
+  padding: 30px;
+}
+@media (max-width: 768px) {
+  .skills-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@keyframes shadowPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px 5px #ffd700;
+  }
+  50% {
+    box-shadow: 0 0 30px 15px #ffd700;
+  }
+}
