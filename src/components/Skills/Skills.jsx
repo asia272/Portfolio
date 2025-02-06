@@ -19,7 +19,7 @@ const Skills = () => {
       <div className="skills-icons">
         {skills.map((skill, index) => (
           <div key={index}>
-            {skill.icon}
+              {skill.icon}
             <span>{skill.name}</span>
             <p style={{fontSize:"11px"}}>Intermediate</p>
           </div>

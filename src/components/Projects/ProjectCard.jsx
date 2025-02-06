@@ -1,14 +1,20 @@
 import React from 'react'
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const ProjectCard = ({projects}) => {
   return (
-    <div>
+    <div className='card-container'>
       {projects.map((project, index) => (
-          <div key={index}>
-            <h5>{project.name}</h5>
-            <p>{project.tec_use}</p>
-            <hr />
-            {/* Render additional project details as needed */}
+          <div key={index} className='cardBox'>
+            <img src={project.img} alt="img" />
+              <div className="cardContent">
+                <h3>{project.name}</h3>
+                <a href={project.link}>
+                  Explore
+                  <FaLongArrowAltRight className='arrowIcon' />
+                  </a>
+              </div>
+
           </div>
         ))}
     </div>

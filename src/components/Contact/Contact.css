@@ -1,0 +1,44 @@
+.contact{
+    /* background-color: aquamarine; */
+    flex-direction: column;
+    gap: 40px;
+}
+.contact-container{
+    display: flex;
+    background-color: red;
+    width: 70%;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap:wrap ; */
+}
+.form-info{
+    background-color:green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px;
+}
+.contact-input{
+    padding: 20px;
+    width: 100%;
+    border-radius: 35px;
+    border: none;
+    border: 1px solid rgb(119, 117, 117);
+    background-color: #222;
+    color: white;
+    outline:none;
+
+}
+.contact-input:focus{
+  border-color:#5EEDA4;
+}
+button{
+    padding: 20px;
+    border-radius: 35px;
+    background-color: #222;
+    color: white;
+}
+button:hover{
+    outline: 2px solid #5EEDA4;
+}

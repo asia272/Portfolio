@@ -47,12 +47,10 @@ button {
   transition: background-color 0.3s ease;
   margin-top: 14px;
 }
-img{
+/* img{
   transition: all 0.3s ease;
-}
-img:hover{
-  transform: scale(1.1);
-}
+} */
+
 /* button:hover {
   background-color: #ffd700;
 } */
@@ -79,9 +77,9 @@ h2{
 
 @keyframes shadowPulse {
   0%, 100% {
-    box-shadow: 0 0 10px 5px #ffd700;
+    box-shadow: 0 0 10px 5px #ffd700 ;
   }
   50% {
-    box-shadow: 0 0 30px 15px #ffd700;
+    box-shadow: 0 0 30px 15px #5EEDA4;
   }
 }

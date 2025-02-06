@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 34px;
+    gap: 40px;
   }
   
   .skills-section h2 {
@@ -51,7 +51,6 @@
     color: #fff;
   }
   /* link buttons */
-  /* Button Styling */
 .a-btn {
   margin-top: 18px;
   background-color: #ffd700;
