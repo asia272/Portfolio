@@ -16,7 +16,7 @@ html {
 
 body {
   margin: 0; /* Remove default margin */
- background-color: #222;
+ background-color: #111;
  color: white;
   overflow-x: hidden;
 
@@ -35,6 +35,7 @@ h1{
 }
 a {
   text-decoration: none;
+  color: white;
 }
 
 button {
@@ -44,7 +45,7 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   margin-top: 14px;
 }
 /* img{

@@ -2,7 +2,7 @@
 .projects {
     display: flex;
     flex-direction: column;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     align-items: center;
     gap: 50px;
     /* background-color:#20C997; */
@@ -43,12 +43,12 @@
 /* Card Container */
 .card-container {
     width: 100%;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 /* Individual Project Card */
@@ -131,5 +131,8 @@
     .btn-box {
         flex-direction: column;
         align-items: center;
+    }
+    .cardBox{
+       max-width: 100%;
     }
 }

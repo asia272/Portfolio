@@ -1,63 +1,94 @@
 import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
+import NearMeIcon from '@mui/icons-material/NearMe';
 import './Contact.css';
+import "./ContactError.css"
 
 const Contact = () => {
   const form = useRef();
   const {
     register,
-    formState: { errors, isSubmitting },
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting},
   } = useForm();
 
   // onSubmit function to handle form submission
-  const sendEmail = (e) => {
-    e.preventDefault()
-    emailjs
-      .sendForm('service_8t19f5v', 'template_rwj6f8p', form.current, {
+  const sendEmail = async () => {  
+    try {
+      await emailjs.sendForm('service_8t19f5v', 'template_rwj6f8p', form.current, {
         publicKey: 'gbCcFmbXFCuYQBlX4',
-      })
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert('Message sent successfully!');
-        },
-        (error) => {
-          console.log(error.text); 
-          alert('Something went wrong. Please try again!');
-        }
-      );
+      });
+  
+      alert('Message sent successfully!');
+      reset();
+  
+    } catch (error) {
+      console.log(error.text);
+      alert('Something went wrong. Please try again!');
+    }
   };
+  
 
   return (
     <div className="section contact" id="contact">
       <h2>Contact Me</h2>
       <div className="contact-container">
-        <div className="my-info">My info</div>
+        <div className="my-info">
+          <div className="info">
+            <h1>Asia Ashraf</h1>
+            <p className='info-p'>
+              BSCS Student & Technology Enthusiast
+              </p>
+          </div>
+          <div className="my-contact-info">
+            <p><span>Age:</span> 21</p>
+            <p><span>Phone:</span> 5784532444</p>
+            <p><span>Email:</span> asiaashraf@gmail.com</p>
+            <p><span>Residence:</span> Pakistan</p>
+            <p><span>Address:</span> Fort Abbas (272), Punjab, Pakistan</p>
+            <p><span>Github:</span> <a href="https://github.com/asia272">github.com/asia272</a></p>
+          </div>
+         
+        </div>
 
         <div className="form-info">
           <h3>Talking with me...</h3>
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={form} onSubmit={handleSubmit(sendEmail)}>
             {/* Name Input */}
             <div>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name"
+              className='form-lable'
+              >
+                Name
+                </label>
               <input
-                className='contact-input'
+                className= {errors.from_name?"input-error contact-input":"contact-input"}
                 {...register('from_name', { required: 'Name is required' })}
                 placeholder="Enter Your Name"
                 id="name"
-                required
+      
               />
-              {errors.name && <p>{errors.name.message}</p>}
+              {errors.from_name && 
+                <p  className={errors.from_name?"error":""}>
+                {errors.from_name.message}
+                </p>
+                }
             </div>
 
             {/* Email Input */}
             <div>
-              <label htmlFor="email">Email</label>
+              <label
+               htmlFor="email"
+               className='form-lable'
+               >
+                Email
+                </label>
               <input
-              className='contact-input'
+                className= {errors.from_email?"input-error contact-input":"contact-input"}
                 type="email"
-                required
+             
                 {...register('from_email', { 
                   required: 'Email is required',
                   pattern: {
@@ -68,26 +99,42 @@ const Contact = () => {
                 placeholder="Enter Your Email"
                 id="email"
               />
-              {errors.email && <p>{errors.email.message}</p>}
+              {errors.from_email && 
+                <p  className={errors.from_email?"error":""}>
+                {errors.from_email.message}
+                </p>
+                }
             </div>
 
             {/* Message Textarea */}
             <div>
-              <label htmlFor="message">Message</label>
+              <label
+               htmlFor="message"
+               className='form-lable'
+               >Message
+               </label>
               <textarea
-              className='contact-input'
+                 className= {errors.message?"input-error contact-input":"contact-input"}
                 {...register('message', { required: 'Message is required' })}
                 placeholder="Something you want to write for me"
                 id="message"
                 rows="8"
               />
-              {errors.message && <p>{errors.message.message}</p>}
+              {errors.message && 
+                <p  className={errors.message?"error":""}>
+                {errors.message.message}
+                </p>
+                }
             </div>
 
             {/* Submit Button */}
             <div>
-              <button type="submit" disabled={isSubmitting}>
+              <button
+              className='contact-btn'
+               type="submit" disabled={isSubmitting}>
                 {isSubmitting ? 'Sending...' : 'Send Message'}
+                <NearMeIcon/>
+                
               </button>
             </div>
           </form>
