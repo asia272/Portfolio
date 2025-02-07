@@ -8,12 +8,12 @@ import { projectBtn } from './data';
 const Projects = () => {
 
 const [projects, setProjects] = useState(data);
-const [active, setActive] = useState("all")
+const [activeBtn, setActiveBtn] = useState("all")
 
   // Find  project 
 let findProject = (tecnology)=>{
 console.log(tecnology)
-  setActive(tecnology)
+  setActiveBtn(tecnology)
 
   if(tecnology ==="all"){
    setProjects(data)
@@ -31,7 +31,7 @@ console.log(tecnology)
         {projectBtn.map((btn,index)=>
         <button 
         key={index}
-        className= {active===btn.btn?"active":"projectBtn"}
+        className= {activeBtn===btn.btn?"activeBtn":"projectBtn"}
         onClick={()=>findProject(btn.btn)}
         >
          {btn.btn}

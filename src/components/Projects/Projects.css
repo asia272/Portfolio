@@ -20,23 +20,20 @@
 
 /* Project Buttons */
 .projectBtn {
-
-    background-color: beige;
-    color: black;
-    border: 1px solid beige;
-
     padding: 8px 12px;
     font-weight: bold;
     cursor: pointer;
-}
-
-.projectBtn:hover {
-    background-color: #222;
+    background-color: #111;
     color: #ffd700;
     border: 1px solid #ffd700;
 }
 
-.active {
+.projectBtn:hover {
+    border: 1px solid #5EEAD4;
+    color: #5EEAD4;
+}
+
+.activeBtn {
     background-color: #ffd700;
 }
 

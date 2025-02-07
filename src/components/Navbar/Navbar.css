@@ -86,6 +86,11 @@
   z-index: 15; /* Ensure it's above other elements */
   margin: 0;
 }
+
+
+
+
+
 .menu-toggle:hover{
   color: #ffd700;
 }
@@ -94,6 +99,7 @@
   right: 8px;
   top: 25px;
 }
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .item{
@@ -104,11 +110,11 @@
     height: 100vh;
     width: 100vw;
     background-color: rgba(253, 253, 253, 0.082); /* Semi-transparent black background */
+    /* background-color: red; */
     position: fixed;
     top: 0;
     left: 0;
     z-index: 5; /* Ensure it appears above other elements but below the navbar */
-    overflow: hidden;
   }
   .navbar {
     height: 5rem; /* Adjust height for smaller screens */

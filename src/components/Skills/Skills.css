@@ -50,27 +50,7 @@
     font-size: 1rem;
     color: #fff;
   }
-  /* link buttons */
-.a-btn {
-  margin-top: 18px;
-  background-color: #ffd700;
-  color: #222;
-  border: 1px solid transparent;
-  padding: 10px 20px;
-  border-radius: 15px;
-  cursor: pointer;
-  text-decoration: none; /* Remove underline from anchor tag */
-  display: inline-flex; /* Flexbox to align icon and text */
-  align-items: center; /* Vertically align items */
-  gap: 8px; /* Space between text and icon */
-}
 
-/* Link Button Hover Effect */
-.a-btn:hover {
-  background-color:#222;
-  color:#ffd700;
-  border: 1px solid #ffd700;
-}
   @media (max-width: 768px) {
     .skills-icons div {
       width: 100px;

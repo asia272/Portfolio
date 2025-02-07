@@ -19,13 +19,15 @@
     align-items: center;
     padding: 14px;
 }
+.form-info h3{
+    color: #FFD700;
+}
 .form-lable{
     position: relative;
     left: 0;
     top: .7rem;
     left:1.85rem;
     font-size: 18px;
-    z-index: 10;
     padding: .35rem;
     background-color:#111;
 }

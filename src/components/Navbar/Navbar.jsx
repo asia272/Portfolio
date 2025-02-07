@@ -28,8 +28,8 @@ const Navbar = () => {
       {menuOpen ? <div className="over-lay"></div> : ""}
       
       {/* Hamburger menu toggle button */}
-      <button className="menu-toggle" onClick={toggleMenu}>
-        {menuOpen ? "" : <MenuIcon fontSize="large" />}
+      <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle Menu">
+      {!menuOpen && <MenuIcon fontSize="large" />}
       </button>
       
       <div className="logo">

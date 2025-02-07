@@ -16,6 +16,7 @@ min-height: 100vh;
 
 .content p{
     font-size: 16px;
+
 }
 .content{
     /* width: 300px; */
@@ -25,6 +26,7 @@ min-height: 100vh;
 .name{
     font-size: 38px;
     font-weight: 500;
+    color: #ffd700;
 }
 .img-box img{
    width: 280px;
@@ -34,7 +36,7 @@ min-height: 100vh;
     font-weight: 500;
 }
 .type span{
-    color: #ffd700;;
+    color:#5EEDA4 ;
 }
 
   
