@@ -4,6 +4,7 @@ import weaterapp_URL from "../../assets/weaterapp.png"
 import airtel_URl from "../../assets/airtel.png"
 import gussingNumberGame from "../../assets/gussing number game.png"
 import randomDogImg from "../../assets/randomDogImg.png"
+import quoteImg from "../../assets/quote.png";
 export const data = [
     {
         id:0,
@@ -42,9 +43,16 @@ export const data = [
     },
     {
         id:5,
-        name:"Gussing Number Game",
+        name:"Random Dog Img Genrater",
         img:randomDogImg,
         link:"https://github.com/asia272/JS-Gussing-Number-Game",
+        tec_use:"htmlCssJs"
+    },
+    {
+        id:6,
+        name:"Quote Genrater",
+        img: quoteImg,
+        link:"https://github.com/asia272/HTML-CSS-JS-based-Projects/tree/main/_14_Quotes%20Genrator",
         tec_use:"htmlCssJs"
     },
 ]
