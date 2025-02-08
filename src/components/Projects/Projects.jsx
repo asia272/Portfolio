@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { data } from './data'
 import ProjectCard from './ProjectCard';
 import "./Projects.css"
-import { useActionState } from 'react';
 import { projectBtn } from './data';
 
 const Projects = () => {
@@ -12,14 +11,12 @@ const [activeBtn, setActiveBtn] = useState("all")
 
   // Find  project 
 let findProject = (tecnology)=>{
-console.log(tecnology)
   setActiveBtn(tecnology)
 
   if(tecnology ==="all"){
    setProjects(data)
   }else{
     const foundItems = data.filter(pro => pro.tec_use === tecnology);
-    console.log(foundItems)
     setProjects(foundItems)
   }
 }

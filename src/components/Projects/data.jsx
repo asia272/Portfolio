@@ -1,6 +1,9 @@
 import toDo_URL from "../../assets/todo.png";
 import lotteryGame_URL from "../../assets/lottery-game.png";
 import weaterapp_URL from "../../assets/weaterapp.png"
+import airtel_URl from "../../assets/airtel.png"
+import gussingNumberGame from "../../assets/gussing number game.png"
+import randomDogImg from "../../assets/randomDogImg.png"
 export const data = [
     {
         id:0,
@@ -24,9 +27,25 @@ export const data = [
         tec_use:"React"
     },
     {
-        id:1,
-        name:"sample taks addded",
-        tec_use:"htmlCss"
+        id:3,
+        name:"Airtel website",
+        img:airtel_URl,
+        link:"https://github.com/asia272/Airtel-clone",
+        tec_use:"htmlCssJs"
+    },
+    {
+        id:4,
+        name:"Gussing Number Game",
+        img:gussingNumberGame,
+        link:"https://github.com/asia272/JS-Gussing-Number-Game",
+        tec_use:"htmlCssJs"
+    },
+    {
+        id:5,
+        name:"Gussing Number Game",
+        img:randomDogImg,
+        link:"https://github.com/asia272/JS-Gussing-Number-Game",
+        tec_use:"htmlCssJs"
     },
 ]
 export const projectBtn = [
