@@ -5,6 +5,7 @@ import airtel_URl from "../../assets/airtel.png"
 import gussingNumberGame from "../../assets/gussing number game.png"
 import randomDogImg from "../../assets/randomDogImg.png"
 import quoteImg from "../../assets/quote.png";
+import simonGame from "../../assets/simonGame.png"
 export const data = [
     {
         id:0,
@@ -54,6 +55,12 @@ export const data = [
         img: quoteImg,
         link:"https://github.com/asia272/HTML-CSS-JS-based-Projects/tree/main/_14_Quotes%20Genrator",
         tec_use:"htmlCssJs"
+    },
+    {
+        id:7,
+        name:"Simon Game",
+        img: simonGame,
+        link:"https://github.com/asia272/Js-Simon-Game",
     },
 ]
 export const projectBtn = [
