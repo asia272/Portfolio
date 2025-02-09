@@ -68,6 +68,7 @@ const Contact = () => {
                 {...register('from_name', { required: 'Name is required' })}
                 placeholder="Enter Your Name"
                 id="name"
+                autoComplete="name" 
       
               />
               {errors.from_name && 
@@ -98,6 +99,7 @@ const Contact = () => {
                 })}
                 placeholder="Enter Your Email"
                 id="email"
+                autoComplete="email"
               />
               {errors.from_email && 
                 <p  className={errors.from_email?"error":""}>

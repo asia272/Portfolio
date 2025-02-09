@@ -27,7 +27,7 @@ const About = () => {
           <p>
           Hi! I'm Asia Ashraf, a passionate web developer specializing in frontend development. I thrive on collaborating with others to bring innovative projects to life.
            <br />
-           I started my journey in 2023 and have recently focused on enhancing my backend skills to build complete and robust web solutions.
+           I started my journey at the beginning of 2023 and am currently improving my backend skills to grow as a Full-Stack Developer and become a good Software Engineer.
 
            </p>
           

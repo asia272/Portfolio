@@ -3,7 +3,6 @@
 .navbar {
   height: 4.7rem;
   width: 100vw;
-  /* background-color: #222; */
   color: white;
   background: #222;
   position: fixed;
@@ -13,11 +12,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  z-index: 10; /* Ensure it stays on top of other elements */
+  z-index: 2000;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s ease; /* Smooth transition for color change */
+  transition: background-color 0.3s ease;
 }
-
 /* Logo styling */
 .logo h1 {
   font-size: 2rem;
@@ -71,26 +69,19 @@
 
 /* New nav-links wrapper styles */
 .nav-links {
-  display: flex; /* Flex layout for the inner container */
-  width: 100%; /* Ensure it takes the full width */
+  display: flex; 
+  width: 100%; 
 }
 
 /* Hamburger menu icon */
 .menu-toggle {
-  display: none; /* Hidden on larger screens */
-  /* color: white; */
+  display: none;
   background: none;
   border: none;
   cursor: pointer;
   color: white;
-  z-index: 15; /* Ensure it's above other elements */
   margin: 0;
 }
-
-
-
-
-
 .menu-toggle:hover{
   color: #ffd700;
 }
@@ -106,75 +97,62 @@
     transition: color 0.2s ease-in;
   }
 
-  .over-lay {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(253, 253, 253, 0.082); /* Semi-transparent black background */
-    /* background-color: red; */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5; /* Ensure it appears above other elements but below the navbar */
-  }
+ 
   .navbar {
-    height: 5rem; /* Adjust height for smaller screens */
+    height: 5rem; 
     padding: 0 1.5rem;
   }
 
   .menu-toggle {
-    display: flex; /* Show the hamburger icon on smaller screens */
+    display: flex; 
     align-items: center;
     justify-content: center;
   }
 
   .menu-toggle:hover {
-    transform: scale(1.1); /* Slightly enlarge the button */
-    border-radius: 50%; /* Make the button round */
-
+    transform: scale(1.1); 
+    border-radius: 50%; 
   }
 
-  /* Responsive styles for listItems */
   .listItems {
     flex-direction: column;
-    position: fixed;
+    position: fixed !important;
     align-items: flex-start;
     top: 0;
     left: -280px;
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
     transition: all 0.5s ease; /* Smooth menu appearance */
+    /* z-index: 1500 !important; */
     height: 100vh;
-    z-index: 1000;
     width: 230px;
-    /* background-color: rgba(255, 255, 255, 0.1); */
     background-color: #222;
+    display: flex;
   }
 
   .listItems.active {
-    left: 0; /* Slide into view */
+    left: 0;
   }
 
   .nav-links {
     flex-direction: column;
-    width: 100%; /* Ensure the nav-links container stretches to full width */
-    padding: 0; /* Remove any default padding */
-    /* background-color: red; */
+    width: 100%; 
+    padding: 0; 
     position: absolute;
     top: 80px;
   }
 
   .item {
-    margin: 0.88rem 0; /* Add spacing between items */
-    font-size: 20px; /* Larger font size for better readability */
-    padding: 0.8rem 2rem; /* Adjust padding for larger clickable area */
-    width: 100%; /* Stretch the item to full width */
+    margin: 0.88rem 0; 
+    font-size: 20px; 
+    padding: 0.8rem 2rem; 
+    width: 100%; 
   }
 
   .item::after {
-    content: none; /* No border effect on smaller screens */
+    content: none; 
   }
 
   .item:hover {
-    /* box-shadow: 0 0 6px rgba(255, 255, 255, 0.5); */
     background-color:#333;
   }
 }
