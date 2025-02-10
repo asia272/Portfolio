@@ -1,19 +1,15 @@
 .contact{
-    /* background-color: aquamarine; */
     flex-direction: column;
     gap: 40px;
 }
 .contact-container{
     display: flex;
-    /* background-color: red; */
     width: 100%;
     gap: 40px;
     justify-content: center;
     align-items: center;
-    /* flex-wrap:wrap ; */
 }
 .form-info{
-    /* background-color:green; */
     display: flex;
     flex-direction: column;
     align-items: center;

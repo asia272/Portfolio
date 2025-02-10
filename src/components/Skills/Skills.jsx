@@ -15,7 +15,10 @@ const Skills = () => {
 
   return (
     <section className="skills-section " id="skills">
-      <h2>My Skills</h2>
+      <div className="section-heading">
+        <h2>Skills</h2>
+        <p>Developing with...</p>
+       </div>
       <div className="skills-icons">
         {skills.map((skill, index) => (
           <div key={index}>

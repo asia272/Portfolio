@@ -6,10 +6,9 @@ import CV from "../../assets/cv.pdf"
 const About = () => {
   return (
     <div className='about section' id='about'>
-      <div className='about-heading'>
+      <div className='section-heading'>
       <h2>About</h2>
       <p>My Story</p>
-
       </div>
 
       <div className="about-container">

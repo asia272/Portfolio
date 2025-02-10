@@ -33,7 +33,11 @@ const Contact = () => {
 
   return (
     <div className="section contact" id="contact">
-      <h2>Contact Me</h2>
+      <div className="section-heading">
+        <h2>Contact Me</h2>
+        <p>Let's connect!</p>
+      </div>
+
       <div className="contact-container">
         <div className="my-info">
           <div className="info">
@@ -45,7 +49,7 @@ const Contact = () => {
           <div className="my-contact-info">
             <p><span>Age:</span> 21</p>
             <p><span>Phone:</span>+92 302 2094272</p>
-            <p><span>Email:</span> asiaashraf@gmail.com</p>
+            <p><span>Email:</span> <a href="mailto:asiaashraf7272@gmail.com">asiaashraf7272@gmail.com</a> </p>
             <p><span>Residence:</span> Pakistan</p>
             <p><span>Address:</span> Fort Abbas (272), Punjab, Pakistan</p>
             <p><span>Github:</span> <a href="https://github.com/asia272">github.com/asia272</a></p>

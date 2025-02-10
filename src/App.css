@@ -21,6 +21,15 @@ body {
  overflow: auto;
   overflow-x: hidden;
 }
+.section-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-heading p{
+  color: #5EEAD4;
+}
 .section {
   display: flex;
   justify-content: center;
@@ -36,6 +45,9 @@ h1{
 a {
   text-decoration: none;
   color: white;
+}
+a:hover{
+  color: #5EEAD4;
 }
   /* link buttons */
   .a-btn {
@@ -70,10 +82,9 @@ button {
 h2{
   font-size: 2.5rem;
   color: #ffd700;
-  animation: shadowPulse 2s infinite ease-in-out;
+  /* animation: shadowPulse 2s infinite ease-in-out; */
   border-radius: 50%;
-  /* margin-bottom: 2rem; */
-  padding: 30px;
+  padding: 20px 20px 5px 20px;
 }
 
 @media (max-width: 770px) {
@@ -88,11 +99,11 @@ h2{
   }
 }
 
-@keyframes shadowPulse {
+/* @keyframes shadowPulse {
   0%, 100% {
     box-shadow: 0 0 10px 5px #ffd700 ;
   }
   50% {
     box-shadow: 0 0 30px 15px #5EEDA4;
   }
-}
+} */
