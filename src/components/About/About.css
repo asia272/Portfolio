@@ -46,23 +46,18 @@
   width: 100%;
   height: 100%;
   border-radius: 10%; 
-  opacity: 0; 
+  opacity: 1; 
   transition: all 0.3s ease; 
   padding: 20px;
   font-size: 18px;
-  background-color: rgba(104, 103, 103, 0.836);
+  color: #99d4eb;
+  /* background-color: rgba(104, 103, 103, 0.836); */
 }
 .img-overlay p{
     margin-top: 3px;
     font-size: 13px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
-.img-overlay:hover{
-    opacity: 0.9;
-    color: #ffd700;
-
-}
-
 @media (max-width:770px) {
     .about-container{
         flex-direction: column;
