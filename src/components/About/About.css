@@ -20,6 +20,9 @@
 .about-container .content p{
     font-size: 15px;
 }
+.content i{
+    color:#5EEAD4;
+}
 .about-container .content:hover{
     transform: scale(1.1);
 }
