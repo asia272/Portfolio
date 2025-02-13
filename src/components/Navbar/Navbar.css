@@ -40,27 +40,28 @@
   color: white;
   text-decoration: none;
   cursor: pointer;
-  position: relative; /* Required for the ::after pseudo-element */
-  transition: color 0.3s ease-in; /* Smooth text color transition */
+  position: relative; 
+  transition: color 0.3s ease-in; 
 }
 
 .item::after {
-  content: ''; /* Add an empty content for the pseudo-element */
+  content: '';
   position: absolute;
   left: 0;
-  bottom: -4px; /* Position it slightly below the text */
-  width: 0; /* Start with zero width */
-  height: 4px; /* Height of the border */
+  bottom: -4px; 
+  width: 0; 
+  height: 4px; 
   background-color:#ffd700;
-  transition: width 0.4s ease-in-out; /* Smoothly animate the width */
+  transition: width 0.3s ease-in-out;
+  border-radius:3px ;
 }
 
 .item:hover {
-  color:#ffd700; /* Change text color on hover */
+  color:#ffd700;
 }
 
 .item:hover::after {
-  width: 100%; /* Expand the border from left to right */
+  width: 100%; 
 }
 
 .item:active {
@@ -122,7 +123,7 @@
     top: 0;
     left: -280px;
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
-    transition: all 0.5s ease; /* Smooth menu appearance */
+    transition: all 0.5s ease; 
     /* z-index: 1500 !important; */
     height: 100vh;
     width: 230px;
@@ -137,7 +138,7 @@
   .nav-links {
     flex-direction: column;
     width: 100%; 
-    padding: 0; 
+    padding: 10px; 
     position: absolute;
     top: 80px;
   }
@@ -147,6 +148,8 @@
     font-size: 20px; 
     padding: 0.8rem 2rem; 
     width: 100%; 
+    border-radius: 10px;
+
   }
 
   .item::after {
