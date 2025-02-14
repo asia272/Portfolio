@@ -5,6 +5,8 @@
   width: 100vw;
   color: white;
   background: #222;
+  background-color: rgba(34, 34, 34, 0.8);
+  backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   left: 0;
@@ -126,6 +128,8 @@
     height: 100vh;
     width: 230px;
     background-color: #222;
+    background-color: rgba(34, 34, 34, 0.8);
+    backdrop-filter: blur(10px);
     display: flex;
   }
 
