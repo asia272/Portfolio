@@ -90,7 +90,7 @@ h2{
 @media (max-width: 770px) {
   .section {
     min-height: auto;
-    padding: 80px 20px;
+    padding: 80px 40px;
   }
 }
 @media (max-width: 768px) {
