@@ -24,8 +24,8 @@ let findProject = (tecnology)=>{
   return (
     <div className='projects section' id='projects'>
       <div className="section-heading">
-      <h2>Portfolio</h2>
-      <p>Check my Works</p>
+      <h2>Projects</h2>
+      <p>See my projects!</p>
       </div>
 
      <div className="btn-box">

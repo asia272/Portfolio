@@ -10,7 +10,7 @@ const ProjectCard = ({projects}) => {
               <div className="cardContent">
                 <h3>{project.name}</h3>
                 <a href={project.link}>
-                  Explore
+                Open Project
                   <FaLongArrowAltRight className='arrowIcon' />
                   </a>
               </div>

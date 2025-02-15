@@ -28,7 +28,7 @@ const About = () => {
              I love turning ideas into reality by creating responsive and interactive websites.
             </p>
             <p>
-             I started my journey at the start of <i>2023</i>, and I'm now diving into backend development to expand my skills and grow as a Full-Stack Developer. My goal is to become a proficient <i>Software Engineer</i> who can tackle complex problems and build meaningful solutions.
+            I started my journey at the start of <i>2023</i> and am now learning backend development to expand my skills, handle data efficiently, and grow as a Full-Stack Developer to become a good <i>Software Engineer</i>
             </p>
             <p>
              <i>Coding</i> 💻 is my passion, and I’m always looking for opportunities to learn, improve, and contribute to meaningful projects.
@@ -36,7 +36,7 @@ const About = () => {
             <p>
               Beyond coding, I have a keen interest in gardening, especially growing beautiful flowers!
               I also enjoy playing badminton  to stay active and energized.  
-              Additionally, I love driving as it gives me a sense of freedom and adventure!  
+              Additionally, I love <i>driving</i>    
             </p>
            </div>
             <div className='quote-box'>
