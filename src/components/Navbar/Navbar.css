@@ -4,7 +4,6 @@
   height: 4.7rem;
   width: 100vw;
   color: white;
-  background: #222;
   background-color: rgba(34, 34, 34, 0.8);
   backdrop-filter: blur(10px);
   position: fixed;
@@ -124,10 +123,8 @@
     left: -280px;
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
     transition: all 0.5s ease; 
-    /* z-index: 1500 !important; */
     height: 100vh;
     width: 230px;
-    background-color: #222;
     background-color: rgba(34, 34, 34, 0.8);
     backdrop-filter: blur(10px);
     display: flex;

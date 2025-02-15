@@ -19,6 +19,7 @@ const Contact = () => {
     try {
       await emailjs.sendForm('service_8t19f5v', 'template_rwj6f8p', form.current, {
         publicKey: 'gbCcFmbXFCuYQBlX4',
+        reply_to: form.current.from_email.value, // Ensure reply-to is set to user's email
       });
   
       alert('Message sent successfully!');
@@ -29,6 +30,7 @@ const Contact = () => {
       alert('Something went wrong. Please try again!');
     }
   };
+  
   
 
   return (
