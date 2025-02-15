@@ -40,7 +40,7 @@ const About = () => {
             </p>
            </div>
             <div className='quote-box'>
-              <p>" ❤️ Love the art of coding and always eager to learn new technologies. "</p>
+              <p>"❤️ Love the art of coding and always eager to learn new technologies."</p>
             </div>
           <a href={CV} download="" className='a-btn'>
             Download CV

@@ -63,11 +63,17 @@ a:hover{
     align-items: center; 
     gap: 8px; 
   }
-  /* Link Button Hover Effect */
-.a-btn:hover {
-  background-color:#111;
-  color:#5EEDA4;
-  border: 1px solid #5EEDA4;
+
+.a-btn{
+  color:#5EEAD4;
+  border: 1px solid #5EEAD4;
+  transition: all 0.2s ease-in;
+}
+.a-btn:hover{
+transform: scale(1.1);
+}
+.a-btn:active{
+  transform: scale(1);
 }
 button {
   /* color: white; */
