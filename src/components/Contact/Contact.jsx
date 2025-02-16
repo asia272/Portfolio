@@ -41,25 +41,7 @@ const Contact = () => {
       </div>
 
       <div className="contact-container">
-        <div className="my-info">
-          <div className="info">
-            <h1>Asia Ashraf</h1>
-            <p className='info-p'>
-              BSCS Student & Technology Enthusiast
-              </p>
-          </div>
-          <div className="my-contact-info">
-            <p><span>Age:</span> 21</p>
-            <p><span>Email:</span> <a href="mailto:asiaashraf7272@gmail.com">asiaashraf7272@gmail.com</a> </p>
-            <p><span>Residence:</span> Pakistan</p>
-            <p><span>Address:</span> Fort Abbas (272), Punjab, Pakistan</p>
-            <p><span>Github:</span> <a href="https://github.com/asia272">github.com/asia272</a></p>
-             <p><span>Linkdin:</span><a href="https://www.linkedin.com/"> linkedin.com/asia-ashraf</a></p>
-          </div>
-         
-        </div>
-
-        <div className="form-info">
+      <div className="form-info">
           <h3>Talking with me...</h3>
           <form ref={form} onSubmit={handleSubmit(sendEmail)}>
             {/* Name Input */}
@@ -147,6 +129,25 @@ const Contact = () => {
             </div>
           </form>
         </div>
+        <div className="my-info">
+          <div className="info">
+            <h1>Asia Ashraf</h1>
+            <p className='info-p'>
+              BSCS Student & Technology Enthusiast
+              </p>
+          </div>
+          <div className="my-contact-info">
+            <p><span>Age:</span> 21</p>
+            <p><span>Email:</span> <a href="mailto:asiaashraf7272@gmail.com">asiaashraf7272@gmail.com</a> </p>
+            <p><span>Residence:</span> Pakistan</p>
+            <p><span>Address:</span> Fort Abbas (272), Punjab, Pakistan</p>
+            <p><span>Github:</span> <a href="https://github.com/asia272">github.com/asia272</a></p>
+             <p><span>Linkdin:</span><a href="https://www.linkedin.com/"> linkedin.com/asia-ashraf</a></p>
+          </div>
+         
+        </div>
+
+        
       </div>
     </div>
   );
