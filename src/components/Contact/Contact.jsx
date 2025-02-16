@@ -11,27 +11,27 @@ const Contact = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isSubmitting},
+    formState: { errors, isSubmitting },
   } = useForm();
 
   // onSubmit function to handle form submission
-  const sendEmail = async () => {  
+  const sendEmail = async () => {
     try {
       await emailjs.sendForm('service_8t19f5v', 'template_rwj6f8p', form.current, {
         publicKey: 'gbCcFmbXFCuYQBlX4',
-        reply_to: form.current.from_email.value, 
+        reply_to: form.current.from_email.value,
       });
-  
+
       alert('Message sent successfully!');
       reset();
-  
+
     } catch (error) {
       console.log(error.text);
       alert('Something went wrong. Please try again!');
     }
   };
-  
-  
+
+
 
   return (
     <div className="section contact" id="contact">
@@ -41,44 +41,44 @@ const Contact = () => {
       </div>
 
       <div className="contact-container">
-      <div className="form-info">
+        <div className="form-info">
           <h3>Talking with me...</h3>
           <form ref={form} onSubmit={handleSubmit(sendEmail)}>
             {/* Name Input */}
             <div>
               <label htmlFor="name"
-              className='form-lable'
+                className='form-lable'
               >
                 Name
-                </label>
+              </label>
               <input
-                className= {errors.from_name?"input-error contact-input":"contact-input"}
+                className={errors.from_name ? "input-error contact-input" : "contact-input"}
                 {...register('from_name', { required: 'Name is required' })}
                 placeholder="Enter Your Name"
                 id="name"
-                autoComplete="name" 
-      
+                autoComplete="name"
+
               />
-              {errors.from_name && 
-                <p  className={errors.from_name?"error":""}>
-                {errors.from_name.message}
+              {errors.from_name &&
+                <p className={errors.from_name ? "error" : ""}>
+                  {errors.from_name.message}
                 </p>
-                }
+              }
             </div>
 
             {/* Email Input */}
             <div>
               <label
-               htmlFor="email"
-               className='form-lable'
-               >
+                htmlFor="email"
+                className='form-lable'
+              >
                 Email
-                </label>
+              </label>
               <input
-                className= {errors.from_email?"input-error contact-input":"contact-input"}
+                className={errors.from_email ? "input-error contact-input" : "contact-input"}
                 type="email"
-             
-                {...register('from_email', { 
+
+                {...register('from_email', {
                   required: 'Email is required',
                   pattern: {
                     value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
@@ -89,42 +89,42 @@ const Contact = () => {
                 id="email"
                 autoComplete="email"
               />
-              {errors.from_email && 
-                <p  className={errors.from_email?"error":""}>
-                {errors.from_email.message}
+              {errors.from_email &&
+                <p className={errors.from_email ? "error" : ""}>
+                  {errors.from_email.message}
                 </p>
-                }
+              }
             </div>
 
             {/* Message Textarea */}
             <div>
               <label
-               htmlFor="message"
-               className='form-lable'
-               >Message
-               </label>
+                htmlFor="message"
+                className='form-lable'
+              >Message
+              </label>
               <textarea
-                 className= {errors.message?"input-error contact-input":"contact-input"}
+                className={errors.message ? "input-error contact-input" : "contact-input"}
                 {...register('message', { required: 'Message is required' })}
                 placeholder="Something you want to write for me"
                 id="message"
                 rows="8"
               />
-              {errors.message && 
-                <p  className={errors.message?"error":""}>
-                {errors.message.message}
+              {errors.message &&
+                <p className={errors.message ? "error" : ""}>
+                  {errors.message.message}
                 </p>
-                }
+              }
             </div>
 
             {/* Submit Button */}
             <div>
               <button
-              className='contact-btn'
-               type="submit" disabled={isSubmitting}>
+                className='contact-btn'
+                type="submit" disabled={isSubmitting}>
                 {isSubmitting ? 'Sending...' : 'Send Message'}
-                <NearMeIcon/>
-                
+                <NearMeIcon />
+
               </button>
             </div>
           </form>
@@ -134,20 +134,21 @@ const Contact = () => {
             <h1>Asia Ashraf</h1>
             <p className='info-p'>
               BSCS Student & Technology Enthusiast
-              </p>
+            </p>
           </div>
           <div className="my-contact-info">
             <p><span>Age:</span> 21</p>
+            <p> Phone:<span> +92 302 2094272</span></p>
             <p><span>Email:</span> <a href="mailto:asiaashraf7272@gmail.com">asiaashraf7272@gmail.com</a> </p>
             <p><span>Residence:</span> Pakistan</p>
             <p><span>Address:</span> Fort Abbas (272), Punjab, Pakistan</p>
             <p><span>Github:</span> <a href="https://github.com/asia272">github.com/asia272</a></p>
-             <p><span>Linkdin:</span><a href="https://www.linkedin.com/"> linkedin.com/asia-ashraf</a></p>
+            <p><span>Linkdin:</span><a href="https://www.linkedin.com/"> linkedin.com/asia-ashraf</a></p>
           </div>
-         
+
         </div>
 
-        
+
       </div>
     </div>
   );
