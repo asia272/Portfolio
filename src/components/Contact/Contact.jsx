@@ -138,7 +138,7 @@ const Contact = () => {
           </div>
           <div className="my-contact-info">
             <p><span>Age:</span> 21</p>
-            <p> Phone:<span> +92 302 2094272</span></p>
+            <p><span>Phone:</span> +92 302 2094272</p>
             <p><span>Email:</span> <a href="mailto:asiaashraf7272@gmail.com">asiaashraf7272@gmail.com</a> </p>
             <p><span>Residence:</span> Pakistan</p>
             <p><span>Address:</span> Fort Abbas (272), Punjab, Pakistan</p>
