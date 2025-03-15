@@ -132,9 +132,9 @@ const Contact = () => {
         <div className="my-info">
           <div className="info">
             <h1>Asia Ashraf</h1>
-            <p className='info-p'>
+            <i className='info-p'>
               BSCS Student & Technology Enthusiast
-            </p>
+            </i>
           </div>
           <div className="my-contact-info">
             <p><span>Age:</span> 21</p>
