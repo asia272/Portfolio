@@ -48,7 +48,7 @@
     border-radius: 35px;
     background-color:var(--body-bg);
     color:var(--body-text);
-    outline: 1px solid white;
+    outline: 1px solid rgb(119, 117, 117);
     display: flex;
     align-items: center;
     justify-content: center;
