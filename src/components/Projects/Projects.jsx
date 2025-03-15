@@ -6,45 +6,43 @@ import { projectBtn } from './data';
 
 const Projects = () => {
 
-const [projects, setProjects] = useState(data);
-const [activeBtn, setActiveBtn] = useState("all")
+  const [projects, setProjects] = useState(data);
+  const [activeBtn, setActiveBtn] = useState("all")
 
   // Find  project 
-let findProject = (tecnology)=>{
-  setActiveBtn(tecnology)
+  let findProject = (tecnology) => {
+    setActiveBtn(tecnology)
 
-  if(tecnology ==="all"){
-   setProjects(data)
-  }else{
-    const foundItems = data.filter(pro => pro.tec_use === tecnology);
-    setProjects(foundItems)
+    if (tecnology === "all") {
+      setProjects(data)
+    } else {
+      const foundItems = data.filter(pro => pro.tec_use === tecnology);
+      setProjects(foundItems)
+    }
   }
-}
 
   return (
     <div className='projects section' id='projects'>
       <div className="section-heading">
-      <h2>Projects</h2>
-      <p>See my projects!</p>
+        <h2>Projects</h2>
+        <p>See my projects!</p>
       </div>
 
-     <div className="btn-box">
-        {projectBtn.map((btn,index)=>
-        <button 
-        key={index}
-        className= {activeBtn===btn.btn?"activeBtn":"projectBtn"}
-        onClick={()=>findProject(btn.btn)}
-        >
-         {btn.btn}
-        </button>
+      <div className="btn-box">
+        {projectBtn.map((btn, index) =>
+          <button
+            key={index}
+            className={activeBtn === btn.btn ? "activeBtn" : "projectBtn"}
+            onClick={() => findProject(btn.btn)}
+          >
+            {btn.btn}
+          </button>
         )}
-        {/* Rendring projects */}
-        <ProjectCard projects={projects}/>
-       </div> 
-      
-
+      </div>
+      {/* Rendring projects */}
+      <ProjectCard projects={projects} />
     </div>
-    
+
   )
 }
 
