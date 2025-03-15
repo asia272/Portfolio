@@ -100,11 +100,12 @@
 .cardContent a {
     text-align: center;
     background-color: #ffd700;
-    color: black;
     background-color: var(--hight-light-color);
+    background-color: var(--skill-bg);
+    border: 1px solid var(--hight-light-color);
     padding: 8px 12px;
     margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -115,9 +116,8 @@
 }
 
 .cardContent a:hover {
-    background-color: #222;
-    color: #ffd700;
-    border: 1px solid #ffd700;
+    background-color: var(--hight-light-color);
+    color: var(--body-text);
 }
 .cardContent a .arrowIcon{
     transition: transform 0.3s ease-in-out;
