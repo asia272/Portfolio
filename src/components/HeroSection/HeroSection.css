@@ -2,20 +2,18 @@
 min-height: 100vh;
 }
 .container{
-    /* width: 100%; */
     display: flex;
     justify-content:center;
     align-items: center;
-    /* height: 100%; */
-    /* padding: 40px 30px; */
 }
-.hero-section img{
+/* .hero-section img{
   border-radius: 50%;
-}
+} */
 
 
 .content p{
     font-size: 16px;
+    line-height: 1.7;
 
 }
 .content{
@@ -24,19 +22,21 @@ min-height: 100vh;
     flex:0.6;
 }
 .name{
-    font-size: 38px;
+    font-size: 3rem;
     font-weight: 500;
-    color: #ffd700;
 }
-.img-box img{
+.img-box{
    width: 280px;
+   border-radius: 50%;
+   border: 2px solid (to right, #1f1b1b, #0d222c);
 }
+
 .type{
-    font-size: 28px;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 .type span{
-    color:#5EEAD4 ;
+    color:var(--hight-light-color);
 }
 
   
@@ -52,7 +52,7 @@ min-height: 100vh;
   /* Hand Icon Styling */
   .hand-icon {
     display: inline-block;
-    transform: rotate(20deg); /* Initial rotation */
+    transform: rotate(20deg);
   }
 
   /* Keyframes for Waving Effect */
@@ -70,13 +70,28 @@ min-height: 100vh;
     .container{
       flex-direction: column-reverse;
       align-items: end;
+      gap: 4rem;
     }
-    .img-box img{
-      width:100%;
+    .img-box{
+      margin-top: 40px;
+      width: 50%;
    }
+   .container{
+    margin-top: 4rem;
+  }
   }
   @media (max-width:790px) {
     .content{
       flex: 1;
+    }
+
+  }
+  @media (max-width:600px) {
+  
+    .boi-i{
+      font-size: 14px;
+    }
+    .type{
+      font-size: 1.50rem;
     }
   }

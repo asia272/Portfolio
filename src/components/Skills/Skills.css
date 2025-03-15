@@ -22,20 +22,21 @@
     justify-content: center;
     width: 120px;
     height: 120px;
-    background-color: #222;
+    background-color: var(--skill-bg);
     border-radius: 10px;
     color: #ffd700;
     font-size: 2rem;
     font-weight: bold;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 0px var(--skill-shadow);
     transition: all 0.3s ease;
     cursor: pointer;
   }
   
   .skills-icons div:hover {
     transform: scale(1.1);
-    background-color: #333;
+    background-color: var(--skill-over-bg);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+
   }
   
   .skills-icons div span {

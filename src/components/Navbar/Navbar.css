@@ -2,10 +2,10 @@
 /* Navbar container */
 .navbar {
   height: 4.7rem;
-  width: 100vw;
-  color: white;
-  background-color: rgba(34, 34, 34, 0.8);
-  backdrop-filter: blur(10px);
+  width: 100%;
+  color: var(--body-text);
+  background-color: var(--nav-bg);
+  /* backdrop-filter: blur(10px); */
   position: fixed;
   top: 0;
   left: 0;
@@ -16,16 +16,19 @@
   z-index: 2000;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   transition: background-color 0.3s ease;
+  font-weight: 600;
 }
 /* Logo styling */
 .logo h1 {
   font-size: 2rem;
-  color:#ffd700;
+  color:var(--hight-light-color);
   font-weight: 500;
+  color: var(--purple);
 }
 
 .logo h1::first-letter {
-  color:white;
+color: var(--body-text);
+
 }
 
 /* Navigation items */
@@ -34,11 +37,10 @@
   align-items: center;
   transition: all 0.3s linear;
 }
-
 .item {
   margin-left: 2rem;
   font-size: 1rem;
-  color: white;
+  color: var(--body-text);
   text-decoration: none;
   cursor: pointer;
   position: relative; 
@@ -49,24 +51,17 @@
   content: '';
   position: absolute;
   left: 0;
-  bottom: -4px; 
+  bottom: -10px; 
   width: 0; 
-  height: 4px; 
-  background-color:#ffd700;
+  height: 3px; 
+  background-color:var(--purple);
   transition: width 0.3s ease-in-out;
   border-radius:3px ;
 }
 
-.item:hover {
-  color:#ffd700;
-}
 
 .item:hover::after {
   width: 100%; 
-}
-
-.item:active {
-  color:#ffd700;
 }
 
 /* New nav-links wrapper styles */
@@ -81,7 +76,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  color: #ffd700;
+  color: var(--purple);
   margin: 0;
   padding: 0;
 }
@@ -94,6 +89,27 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  .listItems {
+    flex-direction: column;
+    position: fixed !important;
+    align-items: flex-start;
+    top: 0;
+    left: -280px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease; 
+    height: 100vh;
+    width: 230px;
+    background-color: rgba(34, 34, 34, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%; 
+    padding: 10px; 
+    position: absolute;
+    top: 80px;
+  }
   .item{
     transition: color 0.2s ease-in;
   }
@@ -115,32 +131,13 @@
     border-radius: 50%; 
   }
 
-  .listItems {
-    flex-direction: column;
-    position: fixed !important;
-    align-items: flex-start;
-    top: 0;
-    left: -280px;
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
-    transition: all 0.5s ease; 
-    height: 100vh;
-    width: 230px;
-    background-color: rgba(34, 34, 34, 0.8);
-    backdrop-filter: blur(10px);
-    display: flex;
-  }
+ 
 
   .listItems.active {
     left: 0;
   }
 
-  .nav-links {
-    flex-direction: column;
-    width: 100%; 
-    padding: 10px; 
-    position: absolute;
-    top: 80px;
-  }
+
 
   .item {
     margin: 0.88rem 0; 
@@ -158,4 +155,9 @@
   .item:hover {
     background-color:#333;
   }
+}
+@media (max-width:500px) {
+ .name{
+  font-size: 2rem !important;
+ } 
 }
