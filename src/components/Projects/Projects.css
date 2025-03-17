@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
-
 }
 
 /* Button Box */
@@ -29,15 +28,17 @@
     margin: 0 !important;
     line-height: 1;
     margin-bottom: 0.68rem !important;
+    border-radius: 1.33rem !important;
 }
 
 .projectBtn:hover {
     border: 1px solid var(--hight-light-color);
     color:var(--hight-light-color);
+    border-radius: 1.33rem !important;
 }
 
 .activeBtn {
-    background-color: var(--hight-light-color);
+    background-color: var(--purple);
     color: white;
     font-weight: bold;
     margin-top: 0;
@@ -61,7 +62,6 @@
     width: 230px;
     max-width: 230px;  
     min-height: 320px;
-    background-color: #222;
     background-color: var(--skill-bg);
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -105,16 +105,15 @@
 /* Explore Button */
 .cardContent a {
     text-align: center;
-    background-color: #ffd700;
     background-color: var(--hight-light-color);
     background-color: var(--skill-bg);
-    border: 1px solid var(--hight-light-color);
+    border: 1px solid var(--body-text);
     padding: 8px 12px;
     margin-top: 10px;
-    border-radius: 15px;
+    border-radius: 1.55rem;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease, color 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,6 +123,8 @@
 .cardContent a:hover {
     background-color: var(--hight-light-color);
     color: var(--body-text);
+    background-color: purple;
+    border: none;
 }
 .cardContent a .arrowIcon{
     transition: transform 0.3s ease-in-out;

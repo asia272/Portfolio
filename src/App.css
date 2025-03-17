@@ -15,7 +15,7 @@
   --hight-light-color: rgba(216, 74, 197, 0.67);
   --nav-bg: #0b0711;
   --purple: purple;
-  --skill-bg:#321b4b;
+  --skill-bg:rgb(33, 19, 51);
   --skill-shadow:#802097;
   --skill-hover-bg: #6c34ad;
 }
@@ -64,7 +64,7 @@ a {
 }
 
 a:hover {
-  color:#FFD700;
+  color:var(--purple);
 }
 
 i {
@@ -76,13 +76,12 @@ i {
   margin-top: 18px;
   color: var(--hight-light-color);
   padding: 10px 20px;
-  border-radius: 15px;
+  border-radius: 1.43rem;
   cursor: pointer;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-
   color: var(--body-text);
   border: 1px solid var(--hight-light-color);
   transition: all 0.2s ease-in;
@@ -97,14 +96,13 @@ i {
 }
 
 button {
-  /* color: white; */
   border: none;
-  border-radius: 16px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 14px;
+  border-radius: 1.33rem !important;
 }
 
 h2 {
