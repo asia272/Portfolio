@@ -13,6 +13,9 @@ const ProjectCard = ({projects}) => {
                 Open Project
                   <FaLongArrowAltRight className='arrowIcon' />
                   </a>
+                  {project.site && 
+                  <a href={project.site}>Live Demo</a>
+                   }
               </div>
 
           </div>

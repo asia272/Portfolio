@@ -21,7 +21,9 @@ export const data = [
         name:"Paste App",
         img:paste_app,
         link:"https://github.com/asia272/React-Paste-App",
+        site:"https://paste-app-pearl.vercel.app/",
         tec_use:"React"
+       
     },
     {
         id:2,
@@ -70,6 +72,7 @@ export const data = [
         name:"Simon Game",
         img: simonGame,
         link:"https://github.com/asia272/Js-Simon-Game",
+        viewCode:"VIEW CODE"
     },
 ]
 export const projectBtn = [
