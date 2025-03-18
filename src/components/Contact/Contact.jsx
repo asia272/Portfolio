@@ -144,7 +144,7 @@ const Contact = () => {
             <p><span>Address:</span> Fort Abbas (272), Punjab, Pakistan</p>
             <p><span>Github:</span> <a href="https://github.com/asia272">github.com/asia272</a></p>
             <p><span>Linkdin:</span><a href="https://www.linkedin.com/"> linkedin.com/asia-ashraf</a></p>
-            <p><span>Frontendmentor:</span><a href="https://www.frontendmentor.io/profile/asia272"> My frontendmentor projects</a></p>
+            <p><span>Frontendmentor:</span><a href="https://www.frontendmentor.io/profile/asia272">frontendmentor.io/profile/asia272</a></p>
           </div>
 
         </div>
