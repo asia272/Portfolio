@@ -44,6 +44,7 @@ export const data = [
         name:"Airtel website",
         img:airtel_URl,
         link:"https://github.com/asia272/Airtel-clone",
+        site:"https://asia272.github.io/Airtel-clone/",
         tec_use:"htmlCssJs"
     },
     {
