@@ -3,12 +3,13 @@ import lotteryGame_URL from "../../assets/lottery-game.png";
 import weaterapp_URL from "../../assets/weaterapp.png"
 import airtel_URl from "../../assets/airtel.png"
 import gussingNumberGame from "../../assets/gussing number game.png"
-import randomDogImg from "../../assets/randomDogImg.png"
 import quoteImg from "../../assets/quote.png";
-import simonGame from "../../assets/simonGame.png"
-import paste_app from "../../assets/paste-app.png"
+import simonGame from "../../assets/simonGame.png";
+import paste_app from "../../assets/paste-app.png";
+import age_calculater from "../../assets/age_calculater.jpg";
+import calculater from "../../assets/calculater.jpg";
 export const data = [
-    
+    // React base
     {
         id:0,
         name:"Todo-List",
@@ -39,6 +40,7 @@ export const data = [
         link:"https://github.com/asia272/React-Weather-app",
         tec_use:"React"
     },
+    // JS base 
     {
         id:4,
         name:"Airtel website",
@@ -49,20 +51,36 @@ export const data = [
     },
     {
         id:5,
+        name:"Age Calculator ",
+        img:age_calculater,
+        link:"https://github.com/asia272/Frontend-Mentor/tree/main/junior/age-calculator-app-main",
+        tec_use:"htmlCssJs",
+        site: "https://asia272.github.io/Frontend-Mentor/junior/age-calculator-app-main/"
+    },
+    {
+        id:6,
+        name:"Calculator App",
+        img:calculater,
+        site:"https://asia272.github.io/Frontend-Mentor/intermediate/calculator-app-main/",
+        tec_use:"htmlCssJs",
+        link: "https://github.com/asia272/Frontend-Mentor/tree/main/intermediate/calculator-app-main"
+    },
+    {
+        id:7,
         name:"Gussing Number Game",
         img:gussingNumberGame,
         link:"https://github.com/asia272/JS-Gussing-Number-Game",
         tec_use:"htmlCssJs"
     },
     {
-        id:7,
+        id:8,
         name:"Quote Genrater",
         img: quoteImg,
         link:"https://github.com/asia272/HTML-CSS-JS-based-Projects/tree/main/_14_Quotes%20Genrator",
         tec_use:"htmlCssJs"
     },
     {
-        id:8,
+        id:9,
         name:"Simon Game",
         img: simonGame,
         link:"https://github.com/asia272/Js-Simon-Game",
