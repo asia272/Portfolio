@@ -54,13 +54,13 @@ export const data = [
         link:"https://github.com/asia272/JS-Gussing-Number-Game",
         tec_use:"htmlCssJs"
     },
-    {
-        id:6,
-        name:"Random Dog Img Genrater",
-        img:randomDogImg,
-        link:"https://github.com/asia272/JS-Gussing-Number-Game",
-        tec_use:"htmlCssJs"
-    },
+    // {
+    //     id:6,
+    //     name:"Random Dog Img Genrater",
+    //     img:randomDogImg,
+    //     link:"https://github.com/asia272/JS-Gussing-Number-Game",
+    //     tec_use:"htmlCssJs"
+    // },
     {
         id:7,
         name:"Quote Genrater",
