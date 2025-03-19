@@ -54,13 +54,6 @@ export const data = [
         link:"https://github.com/asia272/JS-Gussing-Number-Game",
         tec_use:"htmlCssJs"
     },
-    // {
-    //     id:6,
-    //     name:"Random Dog Img Genrater",
-    //     img:randomDogImg,
-    //     link:"https://github.com/asia272/JS-Gussing-Number-Game",
-    //     tec_use:"htmlCssJs"
-    // },
     {
         id:7,
         name:"Quote Genrater",
@@ -73,7 +66,7 @@ export const data = [
         name:"Simon Game",
         img: simonGame,
         link:"https://github.com/asia272/Js-Simon-Game",
-        viewCode:"VIEW CODE"
+        tec_use :"htmlCssJS"
     },
 ]
 export const projectBtn = [
