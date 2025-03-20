@@ -6,36 +6,43 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <motion.div 
-      className="about section" 
+    <motion.div
+      className="about section"
       id="about"
-      initial={{ opacity: 0, y: 50 }} 
-      whileInView={{ opacity: 1, y: 0 }} 
-      transition={{ duration: 1, ease: "easeOut" }}
-      viewport={{ once: false, amount: 0.3 }} 
+      initial={{ opacity: 0, y: -50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeIn" }}
+      viewport={{ once: false, amount: 0.3 }}
     >
-     {/* Section Heading */}
-     <motion.div 
+
+      <div
         className="section-heading"
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
       >
         <h2>About Me</h2>
         <p>My Story</p>
-      </motion.div>
+      </div>
+
       <div className="about-container">
-        {/* Image Section */}
-        <div className="img">
+
+        <motion.div
+          className="img"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease: "easeIn", delay: 0 }}
+        >
           <div className="img-overlay">
             <h3>Asia Ashraf</h3>
             <p>Web Developer</p>
           </div>
           <img src={about} alt="Asia Ashraf" className="aboutimg" />
-        </div>
+        </motion.div>
 
-        {/* About Content Section */}
-        <div className="aboutsection content">
+        <motion.div
+          className="aboutsection content"
+          initial={{ opacity: 0, x: 70 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.2, ease: "easeIn", delay: 0.3 }}
+        >
           <div className="about-content">
             <p>
               Hi! I'm <i>Asia Ashraf</i>, a passionate web developer specializing in frontend
@@ -58,12 +65,12 @@ const About = () => {
             </p>
           </div>
 
-          {/* Quote */}
+
           <div className="quote-box">
             <p>"❤️ Love the art of coding and always eager to learn new technologies."</p>
           </div>
 
-          {/* Download CV Button with Hover Effect */}
+
           <motion.a
             href={CV}
             download=""
@@ -74,7 +81,7 @@ const About = () => {
           >
             Download CV
           </motion.a>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );
