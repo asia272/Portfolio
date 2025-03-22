@@ -89,8 +89,9 @@
     transition: all 0.3s ease;
     padding: 20px;
     font-size: 18px;
-    color: #99d4eb;
-    /* background-color: rgba(104, 103, 103, 0.836); */
+    /* color: #99d4eb; */
+    color:var(--purple);
+    background-color:var(--about-overlay-bg)
 }
 
 .img-overlay p {

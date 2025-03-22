@@ -17,6 +17,7 @@
   --purple: purple;
   --skill-bg:rgb(33, 19, 51);
   --skill-shadow:#802097;
+  --about-overlay-bg :rgba(128, 0, 128,0.3);
 }
 
 html {
