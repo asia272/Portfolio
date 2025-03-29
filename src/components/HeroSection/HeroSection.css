@@ -1,97 +1,117 @@
 .hero-section {
-min-height: 100vh;
+  min-height: 100vh;
 }
-.container{
-    display: flex;
-    justify-content:center;
-    align-items: center;
+
+.container {
+  width: 100%;
+  gap: 3rem;
+  display: grid;
+  max-width: 800px;
+  align-items: center;
+  grid-template-areas: "content img";
 }
+
 /* .hero-section img{
   border-radius: 50%;
 } */
 
 
-.content p{
-    font-size: 16px;
-    line-height: 1.7;
-
-}
-.content{
-    /* width: 300px; */
-    margin-right: 0px;
-    flex:0.6;
-}
-.name{
-    font-size: 3rem;
-    font-weight: 500;
-}
-.img-box{
-   width: 280px;
-   border-radius: 50%;
-   border: 2px solid (to right, #1f1b1b, #0d222c);
+.content p {
+  font-size: 16px;
+  line-height: 1.7;
 }
 
-.type{
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-.type span{
-    color:var(--hight-light-color);
+.content {
+  grid-area: content;
 }
 
-  
-  .a-btn .hi {
-    transition: color 0.3s ease;
+.name {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.img-box {
+  grid-area: img;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-box img {
+  max-width: 280px;
+  min-width: 40%;
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid (to right, #1f1b1b, #0d222c);
+
+}
+
+.type {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.type span {
+  color: var(--hight-light-color);
+}
+
+
+.a-btn .hi {
+  transition: color 0.3s ease;
+}
+
+/* Icon Animation */
+.a-btn:hover .hand-icon {
+  display: inline-block;
+  animation: wave 1s infinite ease-in-out;
+}
+
+/* Hand Icon Styling */
+.hand-icon {
+  display: inline-block;
+  transform: rotate(20deg);
+}
+
+/* Keyframes for Waving Effect */
+@keyframes wave {
+
+  0%,
+  100% {
+    transform: translateX(-3px) rotate(20deg);
+
   }
- /* Icon Animation */
-  .a-btn:hover .hand-icon {
-    display: inline-block;
-    animation: wave 1s infinite ease-in-out;
-  }
-  
-  /* Hand Icon Styling */
-  .hand-icon {
-    display: inline-block;
-    transform: rotate(20deg);
-  }
 
-  /* Keyframes for Waving Effect */
-  @keyframes wave {
-    0%, 100% {
-      transform: translateX(-3px) rotate(20deg); /* Start and end with initial rotation */
-    }
-    50% {
-      transform: translateX(5px) rotate(35deg); /* Add more rotation during animation */
-    }
+  50% {
+    transform: translateX(5px) rotate(35deg);
+ 
   }
+}
 
 
-  @media (max-width: 770px) {
-    .container{
-      flex-direction: column-reverse;
-      align-items: end;
-      gap: 4rem;
-    }
-    .img-box{
-      margin-top: 40px;
-      width: 55%;
-   }
-   .container{
+@media (max-width: 770px) {
+  .container {
+    gap: 2rem;
     margin-top: 4rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img"
+      "content";
   }
-  }
-  @media (max-width:790px) {
-    .content{
-      flex: 1;
-    }
 
+  .img-box img {
+    width: 50%;
   }
-  @media (max-width:600px) {
-  
-    .boi-i{
-      font-size: 14px;
-    }
-    .type{
-      font-size: 1.50rem;
-    }
+
+}
+
+
+@media (max-width:600px) {
+
+  .boi-i {
+    font-size: 14px;
   }
+
+  .type {
+    font-size: 1.50rem;
+  }
+}
