@@ -53,17 +53,17 @@ export const data = [
         id:5,
         name:"Age Calculator ",
         img:age_calculater,
-        link:"https://github.com/asia272/Frontend-Mentor/tree/main/public/static_projects/junior/age-calculator-app-main",
+        link:"https://github.com/asia272/Frontend-Mentor/tree/main/public/static-projects/junior/age-calculator-app-main",
         tec_use:"htmlCssJs",
-        site: "https://frontend-mentor-mauve.vercel.app/static_projects/junior/age-calculator-app-main/"
+        site: "https://frontend-mentor-mauve.vercel.app/static-projects/junior/age-calculator-app-main/"
     },
     {
         id:6,
         name:"Calculator App",
         img:calculater,
-        site:"https://frontend-mentor-mauve.vercel.app/static_projects/intermediate/calculator-app-main/",
+        site:"https://frontend-mentor-mauve.vercel.app/static-projects/intermediate/calculator-app-main/",
         tec_use:"htmlCssJs",
-        link: "https://github.com/asia272/Frontend-Mentor/tree/main/public/static_projects/intermediate/calculator-app-main"
+        link: "https://github.com/asia272/Frontend-Mentor/tree/main/public/static-projects/intermediate/calculator-app-main"
     },
     {
         id:7,
