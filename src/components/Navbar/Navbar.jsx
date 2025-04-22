@@ -4,6 +4,17 @@ import "../Navbar/Navbar.css";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import { toggleMenu } from "../../features/active/activeSlice";
+import HomeIcon from '@mui/icons-material/Home';
+import InfoIcon from '@mui/icons-material/Info';
+import BuildIcon from '@mui/icons-material/Build';
+import WorkIcon from '@mui/icons-material/Work';
+import PhoneIcon from '@mui/icons-material/Phone';
+
+
+
+
+
+
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -16,7 +27,7 @@ const Navbar = () => {
   return (
     <header>
       <div className="navbar">
-        
+
         {/* Hamburger menu toggle button */}
         <button className="menu-toggle" onClick={handleToggleMenu} aria-label="Toggle Menu">
           {!menuOpen && <MenuIcon fontSize="large" />}
@@ -31,11 +42,11 @@ const Navbar = () => {
             <CloseIcon fontSize="large" />
           </button>
           <div className="nav-links">
-            <a href="#home" className="item">Home</a>
-            <a href="#about" className="item">About</a>
-            <a href="#skills" className="item">Skills</a>
-            <a href="#projects" className="item">Projects</a>
-            <a href="#contact" className="item">Contact Me</a>
+            <a href="#home" className="item"> <HomeIcon fontSize="small" /> Home</a>
+            <a href="#about" className="item"> <InfoIcon fontSize="small" /> About</a>
+            <a href="#skills" className="item"><BuildIcon fontSize="small" />Skills</a>
+            <a href="#projects" className="item"><WorkIcon fontSize="small" /> Projects</a>
+            <a href="#contact" className="item"><PhoneIcon fontSize="small" />Contact Me</a>
           </div>
         </div>
       </div>
