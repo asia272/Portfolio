@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "../Navbar/Navbar.css";
 import CloseIcon from "@mui/icons-material/Close";
@@ -9,20 +9,30 @@ import InfoIcon from '@mui/icons-material/Info';
 import BuildIcon from '@mui/icons-material/Build';
 import WorkIcon from '@mui/icons-material/Work';
 import PhoneIcon from '@mui/icons-material/Phone';
-
-
-
-
-
-
-
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
 const Navbar = () => {
+  const [theme, setTheme] = useState(false)
   const dispatch = useDispatch();
   const menuOpen = useSelector((state) => state.menu.menuOpen);
 
   const handleToggleMenu = () => {
     dispatch(toggleMenu());
   };
+  const toggleTheme = () => {
+    setTheme((prev) => !prev);
+  };
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme) {
+      root.classList.remove("dark-theme");
+      root.classList.add("light-theme");
+    } else {
+      root.classList.remove("light-theme");
+      root.classList.add("dark-theme");
+    }
+  }, [theme])
 
   return (
     <header>
@@ -33,9 +43,20 @@ const Navbar = () => {
           {!menuOpen && <MenuIcon fontSize="large" />}
         </button>
 
-        <div className="logo">
-          <h1>Asia</h1>
+        <div className="nav-side1">
+          <div className="logo">
+            <h1>Asia</h1>
+          </div>
+
+          {/*  Theme Toggle */}
+
+          <button onClick={toggleTheme}
+            className="theme-toggle"
+          >
+            {theme ? <DarkModeIcon /> : <LightModeIcon />}
+          </button>
         </div>
+
 
         <div className={`listItems ${menuOpen ? "active" : ""}`}>
           <button className="menu-toggle clone-btn" onClick={handleToggleMenu}>

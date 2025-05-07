@@ -10,7 +10,7 @@ const Skills = () => {
     { icon: <FaReact />, name: "React" },
     { icon: <FaNodeJs />, name: "Node.js" },
     { icon: <FaDatabase />, name: "MongoDB" },
-    { icon: <FaDatabase />, name: "SQL" }, // Adding SQL with a general database icon
+    { icon: <FaDatabase />, name: "SQL" }, 
   ];
 
   return (

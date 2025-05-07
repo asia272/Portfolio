@@ -18,6 +18,11 @@
   transition: background-color 0.3s ease;
   font-weight: 600;
 }
+.nav-side1{
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
 /* Logo styling */
 .logo h1 {
   font-size: 2rem;
@@ -88,7 +93,22 @@ color: var(--body-text);
   right: 8px;
   top: 25px;
 }
+.theme-toggle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:var(--body-text);
 
+  font-size: 18px;
+  color:var(--body-bg);
+  padding: 0.45rem !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+}
+.theme-toggle:hover{
+background-color: purple;
+color: white;
+}
 /* Responsive styles */
 @media (max-width: 768px) {
   .listItems {
@@ -103,12 +123,15 @@ color: var(--body-text);
     width: 230px;
     backdrop-filter: blur(10px);
     display: flex;
+    background-color: inherit;
   }
   .nav-links {
     flex-direction: column;
     width: 100%; 
     position: absolute;
     top: 80px;
+  
+
   }
   .item{
     transition: color 0.2s ease-in;
@@ -148,7 +171,8 @@ color: var(--body-text);
   }
 
   .item:hover {
-    background-color:var(--nav-bg);
+    background-color:var(--purple);
+    color:white;
   }
 }
 @media (max-width:500px) {

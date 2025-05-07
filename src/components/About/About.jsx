@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import about from "../../assets/imggirls.jpg";
 import CV from "../../assets/cv.pdf";
+import DownloadIcon from '@mui/icons-material/Download';
 
 const About = () => {
   return (
@@ -48,7 +49,7 @@ const About = () => {
           </div>
 
           <a href={CV} download="" className="a-btn">
-            Download CV
+            Download CV <DownloadIcon/>
           </a>
         </div>
       </div>

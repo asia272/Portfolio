@@ -24,7 +24,7 @@
     height: 120px;
     background-color: var(--skill-bg);
     border-radius: 10px;
-    color: #ffd700;
+    color:var(--body-text);
     font-size: 2rem;
     font-weight: bold;
     box-shadow: 0px 2px 0px var(--skill-shadow);
@@ -42,7 +42,10 @@
   .skills-icons div span {
     margin-top: 0.5rem;
     font-size: 1rem;
-    color: #fff;
+    color:var(--purple);
+  }
+  .skills-icons p{
+    color: var(--body-text);
   }
 
   @media (max-width: 768px) {

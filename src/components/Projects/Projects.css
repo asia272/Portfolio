@@ -98,7 +98,8 @@
 /* Project Title */
 .cardContent h3 {
     font-size: 1.2rem;
-    color:beige;
+    color:var(--black);
+    color: var(--purple);
     margin-bottom: 8px;
 }
 
@@ -123,6 +124,7 @@
 .cardContent a:hover {
     background-color: var(--hight-light-color);
     color: var(--body-text);
+    color: white;
     background-color: purple;
     border: none;
 }
