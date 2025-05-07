@@ -8,6 +8,7 @@ import simonGame from "../../assets/simonGame.png";
 import paste_app from "../../assets/paste-app.png";
 import age_calculater from "../../assets/age_calculater.jpg";
 import calculater from "../../assets/calculater.jpg";
+import e_commerce_site from "../../assets/desktop-preview.jpg"
 export const data = [
     // React base
     {
@@ -40,9 +41,18 @@ export const data = [
         link:"https://github.com/asia272/React-Weather-app",
         tec_use:"React"
     },
-    // JS base 
+    
     {
         id:4,
+        name:"E-commerce Page",
+        img: e_commerce_site,
+        site:"https://frontend-mentor-mauve.vercel.app/react-projects/intermediate/e-commerce-product-page/#",
+        link:"https://github.com/asia272/Frontend-Mentor/tree/main/react-projects/intermediate/e-commerce-product-page",
+        tec_use:"React"
+    },
+    // JS base 
+    {
+        id:5,
         name:"Airtel website",
         img:airtel_URl,
         link:"https://github.com/asia272/Airtel-clone",
@@ -50,7 +60,7 @@ export const data = [
         tec_use:"htmlCssJs"
     },
     {
-        id:5,
+        id:6,
         name:"Age Calculator ",
         img:age_calculater,
         link:"https://github.com/asia272/Frontend-Mentor/tree/main/public/static-projects/junior/age-calculator-app-main",
@@ -58,7 +68,7 @@ export const data = [
         site: "https://frontend-mentor-mauve.vercel.app/static-projects/junior/age-calculator-app-main/"
     },
     {
-        id:6,
+        id:7,
         name:"Calculator App",
         img:calculater,
         site:"https://frontend-mentor-mauve.vercel.app/static-projects/intermediate/calculator-app-main/",
@@ -66,21 +76,21 @@ export const data = [
         link: "https://github.com/asia272/Frontend-Mentor/tree/main/public/static-projects/intermediate/calculator-app-main"
     },
     {
-        id:7,
+        id:8,
         name:"Gussing Number Game",
         img:gussingNumberGame,
         link:"https://github.com/asia272/JS-Gussing-Number-Game",
         tec_use:"htmlCssJs"
     },
     {
-        id:8,
+        id:9,
         name:"Quote Genrater",
         img: quoteImg,
         link:"https://github.com/asia272/HTML-CSS-JS-based-Projects/tree/main/_14_Quotes%20Genrator",
         tec_use:"htmlCssJs"
     },
     {
-        id:9,
+        id:10,
         name:"Simon Game",
         img: simonGame,
         link:"https://github.com/asia272/Js-Simon-Game",
