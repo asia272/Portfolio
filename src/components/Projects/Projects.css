@@ -19,11 +19,11 @@
 
 /* Project Buttons */
 .projectBtn {
-    padding: 0.8rem 1.88rem ;
+    padding: 0.8rem 1.88rem;
     font-weight: bold;
     cursor: pointer;
     background-color: var(--body-bg);
-    color:var(--body-text);
+    color: var(--body-text);
     border: 1px solid var(--hight-light-color);
     margin: 0 !important;
     line-height: 1;
@@ -33,7 +33,7 @@
 
 .projectBtn:hover {
     border: 1px solid var(--hight-light-color);
-    color:var(--hight-light-color);
+    color: var(--hight-light-color);
     border-radius: 1.33rem !important;
 }
 
@@ -52,24 +52,66 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:4rem;
+    gap: 4rem;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
 
 /* Individual Project Card */
 .cardBox {
+    position: relative;
+    padding: 3px;
+    border-radius: 12px;
+    animation: spin 3s linear infinite;
+    z-index: 0;
     width: 230px;
-    max-width: 230px;  
+    max-width: 230px;
     min-height: 320px;
-    background-color: var(--skill-bg);
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    overflow: hidden; 
-    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.cardBox::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+     background: conic-gradient(from var(--angle),
+            var(--body-bg),
+            var(--skill-bg),
+            var(--purple));
+
+   
+    z-index: -1;
+    animation: spin 3s linear infinite;
+}
+
+.card-content-wrapper {
+    background: var(--skill-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 320px;
     display: flex;
     flex-direction: column;
 }
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+@keyframes spin {
+    0% {
+        --angle: 0deg;
+    }
+
+    100% {
+        --angle: 360deg;
+    }
+}
+
+
 
 /* Card Image */
 .cardBox img {
@@ -83,8 +125,9 @@
 /* Card Hover Effect */
 .cardBox:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
 /* Card Content */
 .cardContent {
     display: flex;
@@ -98,7 +141,7 @@
 /* Project Title */
 .cardContent h3 {
     font-size: 1.2rem;
-    color:var(--black);
+    color: var(--black);
     color: var(--purple);
     margin-bottom: 8px;
 }
@@ -128,24 +171,28 @@
     background-color: purple;
     border: none;
 }
-.cardContent a .arrowIcon{
+
+.cardContent a .arrowIcon {
     transition: transform 0.3s ease-in-out;
 }
-.cardContent a .arrowIcon:hover{
+
+.cardContent a .arrowIcon:hover {
     transform: translate(5px, 0);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .btn-box {
-       flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-    .cardBox{
-       max-width: 100%;
+
+    .cardBox {
+        max-width: 100%;
     }
 }
-@media(max-width:557px){
-    .cardBox{
+
+@media(max-width:557px) {
+    .cardBox {
         width: 100%;
     }
 }
