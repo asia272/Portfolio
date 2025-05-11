@@ -28,7 +28,7 @@
     font-size: 2rem;
     font-weight: bold;
     box-shadow: 0px 2px 0px var(--skill-shadow);
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
     cursor: pointer;
   }
   
@@ -38,6 +38,12 @@
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
 
   }
+  .skills-icons div:hover{
+transform: rotate(360deg) scale(1.2) ;
+
+
+  }
+
   
   .skills-icons div span {
     margin-top: 0.5rem;

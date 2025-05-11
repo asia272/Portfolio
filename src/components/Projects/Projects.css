@@ -35,6 +35,7 @@
     border: 1px solid var(--hight-light-color);
     color: var(--hight-light-color);
     border-radius: 1.33rem !important;
+
 }
 
 .activeBtn {
@@ -67,7 +68,9 @@
     width: 230px;
     max-width: 230px;
     min-height: 320px;
-
+}
+.cardBox:hover{
+    transform: matrix(0,1,1,0,0,0);
 }
 
 .cardBox::before {
@@ -125,7 +128,7 @@
 /* Card Hover Effect */
 .cardBox:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Card Content */

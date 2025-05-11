@@ -35,6 +35,8 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+   position: relative;
+   padding: 8px;
 }
 
 .img-box img {
@@ -45,6 +47,7 @@
   border: 2px solid (to right, #1f1b1b, #0d222c);
 
 }
+
 
 .type {
   font-size: 1.8rem;
