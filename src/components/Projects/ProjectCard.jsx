@@ -11,11 +11,14 @@ const ProjectCard = ({ projects }) => {
             <div className="cardContent">
               <h3>{project.name}</h3>
               <a href={project.link}>
-                Open Project
+                View Code
                 <FaLongArrowAltRight className='arrowIcon' />
               </a>
-              {project.site && 
-                <a href={project.site}>Live Demo</a>
+              {project.site &&
+                <a href={project.site}>Live Demo
+                  <FaLongArrowAltRight className='arrowIcon' />
+                </a>
+
               }
             </div>
           </div>
