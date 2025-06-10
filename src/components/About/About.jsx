@@ -3,10 +3,20 @@ import "./About.css";
 import about from "../../assets/imggirls.jpg";
 import CV from "../../assets/cv.pdf";
 import DownloadIcon from '@mui/icons-material/Download';
+import { motion } from "framer-motion";
+
 
 const About = () => {
   return (
-    <div className="about section" id="about">
+    <motion.div
+      className="about section"
+      id="about"
+      initial={{ opacity: 0, y: 150 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeIn" }}
+      viewport={{ once: true }}
+    >
+
       <div className="section-heading">
         <h2>About Me</h2>
         <p>My Story</p>
@@ -49,11 +59,14 @@ const About = () => {
           </div>
 
           <a href={CV} download="" className="a-btn">
-            Download CV <DownloadIcon/>
+            Download CV <DownloadIcon />
           </a>
         </div>
       </div>
-    </div>
+         </motion.div>
+  
+
+
   );
 };
 

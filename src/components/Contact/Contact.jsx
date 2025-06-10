@@ -3,6 +3,8 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import NearMeIcon from '@mui/icons-material/NearMe';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import toast from 'react-hot-toast';
+import { motion } from "framer-motion";
 import './Contact.css';
 import "./ContactError.css"
 
@@ -22,8 +24,7 @@ const Contact = () => {
         publicKey: 'gbCcFmbXFCuYQBlX4',
         reply_to: form.current.from_email.value,
       });
-
-      alert('Message sent successfully!');
+      toast.success('Message sent successfully!');
       reset();
 
     } catch (error) {
@@ -35,7 +36,12 @@ const Contact = () => {
 
 
   return (
-    <div className="section contact" id="contact">
+    <motion.div className="section contact" id="contact"
+      initial={{ opacity: 0, y: 150 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeIn" }}
+      viewport={{ once: true }}
+    >
       <div className="section-heading">
         <h2>Contact Me</h2>
         <p>Let's connect! 😎 </p>
@@ -145,7 +151,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
