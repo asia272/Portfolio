@@ -6,18 +6,20 @@ import Skills from './components/Skills/Skills';
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact"
 import Overlay from './components/Overlay/Overlay';
+import Scroll from './components/ScrollAnimate/Scroll';
 
 function App() {
+
   return (
     <>
-    
-        <Navbar />
-        <HeroSection />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Overlay/>
+      <Scroll />
+      <Navbar />
+      <HeroSection />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Overlay />
     </>
   );
 }
