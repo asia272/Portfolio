@@ -1,6 +1,5 @@
 import React from "react";
 import "./Skills.css";
-import { motion } from "framer-motion";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
 
 const Skills = () => {
@@ -15,33 +14,27 @@ const Skills = () => {
   ];
 
   return (
-    <motion.section className="skills-section " id="skills"
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeIn" }}
-      viewport={{ once: true }}>
+    <section className="skills-section" id="skills" data-aos="fade-up">
       <div className="section-heading">
-        <h2>Skills</h2>
-        <p>Developing with...</p>
+        <h2 data-aos="fade-up">Skills</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Developing with...</p>
       </div>
-  <div className="skills-icons">
-  {skills.map((skill, index) => (
-    <motion.div
-      key={index}
-      className="skill-box"
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeIn" }}
-      viewport={{ once: true }}
-    >
-      {skill.icon}
-      <span>{skill.name}</span>
-      <p style={{ fontSize: "11px" }}>Intermediate</p>
-    </motion.div>
-  ))}
-</div>
 
-    </motion.section>
+      <div className="skills-icons">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="skill-box"
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
+          >
+            {skill.icon}
+            <span>{skill.name}</span>
+            <p style={{ fontSize: "11px" }}>Intermediate</p>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

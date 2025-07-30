@@ -1,34 +1,25 @@
-import React, { useEffect, useState } from 'react'
+import  {  useState } from 'react'
 import { data } from './data'
 import ProjectCard from './ProjectCard';
 import "./Projects.css"
-import { motion } from "framer-motion";
 import { projectBtn } from './data';
 
 const Projects = () => {
-
   const [projects, setProjects] = useState(data);
-  const [activeBtn, setActiveBtn] = useState("all")
+  const [activeBtn, setActiveBtn] = useState("all");
 
-  // Find  project 
   let findProject = (tecnology) => {
-    setActiveBtn(tecnology)
-
+    setActiveBtn(tecnology);
     if (tecnology === "all") {
-      setProjects(data)
+      setProjects(data);
     } else {
       const foundItems = data.filter(pro => pro.tec_use === tecnology);
-      setProjects(foundItems)
+      setProjects(foundItems);
     }
   }
 
   return (
-    <motion.div className='projects section' id='projects'
-      initial={{ opacity: 0, y: 150 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeIn" }}
-      viewport={{ once: true }}
-    >
+    <div className='projects section' id='projects' data-aos="fade-up">
       <div className="section-heading">
         <h2>Projects</h2>
         <p>See my projects!</p>
@@ -45,10 +36,10 @@ const Projects = () => {
           </button>
         )}
       </div>
-      {/* Rendring projects */}
-      <ProjectCard projects={projects}/>
-    </motion.div>
 
+      {/* Rendering projects */}
+      <ProjectCard projects={projects}/>
+    </div>
   )
 }
 

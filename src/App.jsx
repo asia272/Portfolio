@@ -1,4 +1,7 @@
 import './App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import HeroSection from "./components/HeroSection/HeroSection";
 import About from './components/About/About';
@@ -8,8 +11,13 @@ import Contact from "./components/Contact/Contact"
 import Overlay from './components/Overlay/Overlay';
 import Scroll from './components/ScrollAnimate/Scroll';
 
-function App() {
 
+
+function App() {
+  //Aos (animation on text)
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <Scroll />
