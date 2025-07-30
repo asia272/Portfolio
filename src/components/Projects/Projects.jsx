@@ -1,4 +1,4 @@
-import  {  useState } from 'react'
+import { useState } from 'react'
 import { data } from './data'
 import ProjectCard from './ProjectCard';
 import "./Projects.css"
@@ -21,8 +21,8 @@ const Projects = () => {
   return (
     <div className='projects section' id='projects' data-aos="fade-up">
       <div className="section-heading">
-        <h2>Projects</h2>
-        <p>See my projects!</p>
+        <h2 data-aos="fade-right">Projects</h2>
+        <p data-aos="fade-left"> See my projects!</p>
       </div>
 
       <div className="btn-box">
@@ -38,7 +38,7 @@ const Projects = () => {
       </div>
 
       {/* Rendering projects */}
-      <ProjectCard projects={projects}/>
+      <ProjectCard projects={projects} />
     </div>
   )
 }

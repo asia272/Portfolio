@@ -16,8 +16,8 @@ const Skills = () => {
   return (
     <section className="skills-section" id="skills" data-aos="fade-up">
       <div className="section-heading">
-        <h2 data-aos="fade-up">Skills</h2>
-        <p data-aos="fade-up" data-aos-delay="100">Developing with...</p>
+        <h2 data-aos="fade-left">Skills</h2>
+        <p data-aos="fade-right" data-aos-delay="100">Developing with...</p>
       </div>
 
       <div className="skills-icons">

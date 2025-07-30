@@ -18,7 +18,8 @@ const About = () => {
             <h3>Asia Ashraf</h3>
             <p>Web Developer</p>
           </div>
-          <img src={about} alt="Asia Ashraf" className="aboutimg" />
+          <img src={about} alt="Asia Ashraf" className="aboutimg"
+          data-aos="zoom-in" />
         </div>
 
         <div className="aboutsection content">
