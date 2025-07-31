@@ -14,12 +14,14 @@ import Scroll from './components/ScrollAnimate/Scroll';
 
 
 function App() {
+
   //Aos (animation on text)
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
     <>
+
       <Scroll />
       <Navbar />
       <HeroSection />

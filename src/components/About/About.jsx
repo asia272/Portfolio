@@ -1,10 +1,10 @@
-import React from "react";
 import "./About.css";
 import about from "../../assets/imggirls.jpg";
 import CV from "../../assets/cv.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 
 const About = () => {
+
   return (
     <div className="about section" id="about">
       <div className="section-heading" >
@@ -13,7 +13,7 @@ const About = () => {
       </div>
 
       <div className="about-container">
-        <div className="img" data-aos="zoom-in">
+        <div className="img" data-aos="flip-up">
           <div className="img-overlay"  >
             <h3>Asia Ashraf</h3>
             <p>Web Developer</p>
