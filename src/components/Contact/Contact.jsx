@@ -4,7 +4,6 @@ import emailjs from '@emailjs/browser';
 import NearMeIcon from '@mui/icons-material/NearMe';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import toast from 'react-hot-toast';
-import { motion } from "framer-motion";
 import './Contact.css';
 import "./ContactError.css"
 
@@ -16,6 +15,7 @@ const Contact = () => {
     reset,
     formState: { errors, isSubmitting },
   } = useForm();
+
 
   // onSubmit function to handle form submission
   const sendEmail = async () => {
@@ -36,23 +36,18 @@ const Contact = () => {
 
 
   return (
-    <motion.div className="section contact" id="contact"
-      initial={{ opacity: 0, y: 150 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeIn" }}
-      viewport={{ once: true }}
-    >
+    <div className="section contact" id="contact" >
       <div className="section-heading">
-        <h2>Contact Me</h2>
-        <p>Let's connect! 😎 </p>
+        <h2 data-aos="fade-left">Contact Me</h2>
+        <p data-aos="fade-right">Let's connect! 😎 </p>
       </div>
 
       <div className="contact-container">
         <div className="form-info">
-          <h3>Talking with me...</h3>
+          <h3 data-aos="fade-down">Talking with me...</h3>
           <form ref={form} onSubmit={handleSubmit(sendEmail)}>
             {/* Name Input */}
-            <div>
+            <div data-aos="fade-up">
               <label htmlFor="name"
                 className='form-lable'
               >
@@ -74,7 +69,7 @@ const Contact = () => {
             </div>
 
             {/* Email Input */}
-            <div>
+            <div data-aos="fade-up">
               <label
                 htmlFor="email"
                 className='form-lable'
@@ -104,7 +99,7 @@ const Contact = () => {
             </div>
 
             {/* Message Textarea */}
-            <div>
+            <div data-aos="fade-up">
               <label
                 htmlFor="message"
                 className='form-lable'
@@ -128,6 +123,7 @@ const Contact = () => {
             <div>
               <button
                 className='contact-btn'
+
                 type="submit" disabled={isSubmitting}>
                 {isSubmitting ? 'Sending...' : 'Send Message'}
                 <NearMeIcon />
@@ -136,14 +132,15 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className="my-info">
-          <div className="info">
+        {/* Information box */}
+        <div className="my-info" data-aos="zoom-out">
+          <div className="info" >
             <h1>Asia Ashraf</h1>
             <i className='info-p'>
               BSCS Student & Technology Enthusiast
             </i>
           </div>
-          <div className="my-contact-info">
+          <div className="my-contact-info" >
             <p><span>Email:</span> <a href="mailto:asiaashraf7272@gmail.com">asiaashraf7272@gmail.com</a> </p>
             <p><span>Address:</span> Fort Abbas (272), Punjab, Pakistan</p>
             <p><span>Github:</span> <a href="https://github.com/asia272">github.com/asia272</a></p>
@@ -151,7 +148,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

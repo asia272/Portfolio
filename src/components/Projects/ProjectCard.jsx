@@ -8,8 +8,9 @@ const ProjectCard = ({ projects }) => {
         <div
           key={index}
           className='cardBox'
+
           data-aos="fade-up"
-          data-aos-duration="800"
+          data-aos-delay={index * 100}
         >
           <div className='card-content-wrapper'>
             <img src={project.img} alt="img" />

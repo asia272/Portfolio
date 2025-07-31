@@ -25,10 +25,11 @@ const Projects = () => {
         <p data-aos="fade-left"> See my projects!</p>
       </div>
 
-      <div className="btn-box">
+      <div className="btn-box" >
         {projectBtn.map((btn, index) =>
           <button
             key={index}
+            data-aos="zoom-in"
             className={activeBtn === btn.btn ? "activeBtn" : "projectBtn"}
             onClick={() => findProject(btn.btn)}
           >

@@ -49,13 +49,13 @@ const HeroSection = () => {
             and engaging experiences.
           </motion.p>
 
-    
+
           <motion.a
             href="#contact"
             className="hi a-btn"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.5 }}
+            transition={{ duration: 0.5,type:"spring", delay: 1.5 }}
           >
             Say Hi,
             <BackHandIcon className="hi hand-icon" />
@@ -63,12 +63,11 @@ const HeroSection = () => {
         </div>
 
         <div className="img-box">
-         <motion.img src={myImg}
-          alt="Asia Ashraf"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 1 }}
-        />
+          <img src={myImg}
+            alt="Asia Ashraf"
+            data-aos="zoom-in"
+
+          />
         </div>
       </div>
     </div>

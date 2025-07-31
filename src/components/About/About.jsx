@@ -13,13 +13,13 @@ const About = () => {
       </div>
 
       <div className="about-container">
-        <div className="img" data-aos="fade-right">
-          <div className="img-overlay">
+        <div className="img" data-aos="zoom-in">
+          <div className="img-overlay"  >
             <h3>Asia Ashraf</h3>
             <p>Web Developer</p>
           </div>
           <img src={about} alt="Asia Ashraf" className="aboutimg"
-          data-aos="zoom-in" />
+          />
         </div>
 
         <div className="aboutsection content">
