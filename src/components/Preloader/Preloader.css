@@ -1,0 +1,39 @@
+.preloader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f9f9f9; /* You can change to your gradient light theme */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.shapes {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.shape {
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(270deg, #FA5674 0%, #6065D4 100%);
+}
+
+.loader-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #505da8;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  height: 4px;
+  width: 0;
+  background: linear-gradient(270deg, #FA5674 0%, #6065D4 100%);
+  border-radius: 2px;
+}

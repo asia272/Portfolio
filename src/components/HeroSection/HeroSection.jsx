@@ -5,9 +5,12 @@ import { Typewriter } from "react-simple-typewriter";
 import BackHandIcon from "@mui/icons-material/BackHand";
 import { motion } from "framer-motion";
 
+
 const HeroSection = () => {
   return (
     <div className="hero-section section" id="home">
+  
+
       <div className="container">
         <div className="content">
           <i className="boi-i">Web Developer,</i>
@@ -55,7 +58,7 @@ const HeroSection = () => {
             className="hi a-btn"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5,type:"spring", delay: 1.5 }}
+            transition={{ duration: 0.5, type: "spring", delay: 1.5 }}
           >
             Say Hi,
             <BackHandIcon className="hi hand-icon" />

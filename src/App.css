@@ -41,10 +41,12 @@ html {
 body {
   margin: 0;
   background-color: var(--body-bg);
+  background: var(--body-bg);
   /* background-color: #111; */
   color: var(--body-text);
   overflow: auto;
   overflow-x: hidden;
+  
 }
 
 .section-heading {

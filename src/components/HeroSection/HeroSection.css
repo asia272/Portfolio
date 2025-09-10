@@ -37,8 +37,8 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-   position: relative;
-   padding: 8px;
+  position: relative;
+  padding: 8px;
 }
 
 .img-box img {
@@ -88,7 +88,7 @@
 
   50% {
     transform: translateX(5px) rotate(35deg);
- 
+
   }
 }
 
@@ -119,4 +119,25 @@
   .type {
     font-size: 1.50rem;
   }
+}
+
+/* bg video */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
 }
