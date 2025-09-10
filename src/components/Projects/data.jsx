@@ -95,7 +95,7 @@ export const data = [
         name: "Simon Game",
         img: simonGame,
         link: "https://github.com/asia272/Js-Simon-Game",
-        tec_use: "htmlCssJS"
+        tec_use: "htmlCssJs"
     },
 ]
 export const projectBtn = [

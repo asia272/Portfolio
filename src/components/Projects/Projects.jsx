@@ -29,7 +29,7 @@ const Projects = () => {
         {projectBtn.map((btn, index) =>
           <button
             key={index}
-            data-aos="zoom-in"
+            data-aos="zoom-out"
             className={activeBtn === btn.btn ? "activeBtn" : "projectBtn"}
             onClick={() => findProject(btn.btn)}
           >
