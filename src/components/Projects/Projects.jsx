@@ -23,6 +23,7 @@ const Projects = () => {
       <div className="section-heading">
         <h2 data-aos="fade-right">Projects</h2>
         <p data-aos="fade-left"> See my projects!</p>
+          
       </div>
 
       <div className="btn-box" >

@@ -1,6 +1,6 @@
 import toDo_URL from "../../assets/todo.png";
 import lotteryGame_URL from "../../assets/lottery-game.png";
-import weaterapp_URL from "../../assets/weaterapp.png"
+import weaterapp_URL from "../../assets/preview.jpg"
 import airtel_URl from "../../assets/airtel.png"
 import gussingNumberGame from "../../assets/gussing number game.png"
 import quoteImg from "../../assets/quote.png";
@@ -11,8 +11,16 @@ import calculater from "../../assets/calculater.jpg";
 import e_commerce_site from "../../assets/desktop-preview.jpg"
 export const data = [
     // React base
-    {
+     {
         id: 0,
+        name: "Weather App",
+        img: weaterapp_URL,
+        link: "https://github.com/asia272/weather-app",
+        site: "https://weather-app-six-mocha-2yljnsbf39.vercel.app/",
+        tec_use: "React"
+    },
+    {
+        id: 1,
         name: "Todo App",
         img: toDo_URL,
         site: "https://frontend-mentor-mauve.vercel.app/react-projects/intermediate/todo-app/",
@@ -20,7 +28,7 @@ export const data = [
         tec_use: "React"
     },
     {
-        id: 1,
+        id: 2,
         name: "Paste App",
         img: paste_app,
         link: "https://github.com/asia272/React-Paste-App",
@@ -29,20 +37,12 @@ export const data = [
 
     },
     {
-        id: 2,
+        id: 3,
         name: "Lottery Game",
         img: lotteryGame_URL,
         link: "https://github.com/asia272/React-Lottery-Game",
         tec_use: "React"
     },
-    {
-        id: 3,
-        name: "Weather App",
-        img: weaterapp_URL,
-        link: "https://github.com/asia272/React-Weather-app",
-        tec_use: "React"
-    },
-
     {
         id: 4,
         name: "E-commerce Page",
@@ -101,9 +101,6 @@ export const data = [
 export const projectBtn = [
     {
         btn: "all"
-    },
-    {
-        btn: "htmlCss"
     },
     {
         btn: "htmlCssJs",
