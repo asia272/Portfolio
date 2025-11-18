@@ -24,7 +24,6 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="skill-box"
             data-aos="fade-up"
             data-aos-delay={index * 100}
           >

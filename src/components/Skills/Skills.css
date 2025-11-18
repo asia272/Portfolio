@@ -28,12 +28,12 @@
     font-size: 2rem;
     font-weight: bold;
     box-shadow: 0px 2px 0px var(--skill-shadow);
-    transition: all 0.6s ease;
+    transition: all 0.2s ease-in;
     cursor: pointer;
   }
   
   .skills-icons div:hover {
-    transform: scale(1.1);
+
     background-color: var(--body-bg);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
     transform: rotate(360deg) scale(1.2)  !important;
