@@ -1,13 +1,16 @@
 import React from "react";
 import "./Skills.css";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
-
+import { SiTailwindcss, SiTypescript, SiNextdotjs } from "react-icons/si";
 const Skills = () => {
   const skills = [
     { icon: <FaHtml5 />, name: "HTML" },
     { icon: <FaCss3Alt />, name: "CSS" },
+    { icon: <SiTailwindcss />, name: "Tailwind" },
     { icon: <FaJs />, name: "JavaScript" },
+    { icon: <SiTypescript />, name: "TypeScript" },
     { icon: <FaReact />, name: "React" },
+    { icon: <SiNextdotjs />, name: "NextJs" },
     { icon: <FaNodeJs />, name: "Node.js" },
     { icon: <FaDatabase />, name: "MongoDB" },
     { icon: <FaDatabase />, name: "SQL" },
@@ -29,7 +32,6 @@ const Skills = () => {
           >
             {skill.icon}
             <span>{skill.name}</span>
-            <p style={{ fontSize: "11px" }}>Intermediate</p>
           </div>
         ))}
       </div>
