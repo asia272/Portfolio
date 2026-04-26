@@ -15,7 +15,7 @@ const About = () => {
         <div className="img" data-aos="flip-up">
           <div className="img-overlay">
             <h3>Asia Ashraf</h3>
-            <p>Web Developer</p>
+            <p>Full-Stack Next.js Developer</p>
           </div>
           <img src={about} alt="Asia Ashraf" className="aboutimg" />
         </div>
@@ -23,25 +23,29 @@ const About = () => {
         <div className="aboutsection content">
           <div className="about-content">
             <p data-aos="fade-up">
-              Hi! I'm <i>Asia Ashraf</i>, a passionate web developer
-              specializing in frontend development. I love turning ideas into
-              reality by creating responsive and interactive websites.
+              Hi! I'm <i>Asia Ashraf</i>, a passionate{" "}
+              <i>Full-Stack Next.js Developer</i> focused on building modern,
+              scalable, and user-friendly web applications. I enjoy turning
+              ideas into real-world products with clean UI and efficient backend
+              logic.
             </p>
+
             <p data-aos="fade-up">
-              I started my journey at the start of <i>2023</i> and am now
-              learning backend development to expand my skills, handle data
-              efficiently, and grow as a Full-Stack Developer to become a good{" "}
-              <i>Software Engineer</i>.
+              Since starting my journey in <i>2023</i>, I’ve grown from frontend
+              development into full-stack development. I have built real-world
+              projects with authentication, APIs, and responsive design, honing my skills in Next.js, React, and modern web technologies. 
+            </p>  
+
+            <p data-aos="fade-up">
+              I’m constantly improving my skills, exploring new technologies,
+              and aiming to become a highly skilled <i>Software Engineer</i> who
+              builds impactful and scalable digital solutions.
             </p>
+
             <p data-aos="fade-up">
-              <i>Coding</i> 💻 is my passion, and I’m always looking for
-              opportunities to learn, improve, and contribute to meaningful
-              projects.
-            </p>
-            <p data-aos="fade-up">
-              Beyond coding, I have a keen interest in gardening, especially
-              growing beautiful flowers! I also enjoy playing badminton to stay
-              active and energized. Additionally, I love <i>driving</i>.
+              Beyond coding, I enjoy gardening 🌱, playing badminton 🏸, and
+              driving 🚗 — activities that keep me creative, active, and
+              balanced.
             </p>
           </div>
 

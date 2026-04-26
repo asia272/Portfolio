@@ -108,7 +108,7 @@ const Contact = () => {
               <textarea
                 className={errors.message ? "input-error contact-input" : "contact-input"}
                 {...register('message', { required: 'Message is required' })}
-                placeholder="Something you want to write for me"
+                placeholder="Something you want to write for me ..."
                 id="message"
                 rows="8"
               />
