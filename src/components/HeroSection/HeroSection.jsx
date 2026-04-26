@@ -9,11 +9,9 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <div className="hero-section section" id="home">
-  
-
       <div className="container">
         <div className="content">
-          <i className="boi-i">Web Developer,</i>
+          <i className="boi-i">Full-Stack NextJs Developer,</i>
           <motion.h1
             className="name"
             initial={{ opacity: 0, y: -20 }}
@@ -31,7 +29,11 @@ const HeroSection = () => {
             I'm a{" "}
             <span>
               <Typewriter
-                words={["Web Developer", "Frontend Developer"]}
+                words={[
+                  "Full-Stack Developer",
+                  "Next.js Developer",
+                  "Web Developer",
+                ]}
                 loop={true}
                 cursor
                 cursorStyle="|"
@@ -47,11 +49,12 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 1 }}
           >
-            As a dedicated front-end developer, I specialize in designing and
-            building dynamic, interactive user interfaces that deliver seamless
-            and engaging experiences.
+            I specialize in building scalable full-stack applications using
+            Next.js, React, and modern web technologies. I have hands-on
+            experience developing real-world projects with authentication, APIs,
+            and responsive UI, focusing on performance, clean code, and user
+            experience.
           </motion.p>
-
 
           <motion.a
             href="#contact"
@@ -60,17 +63,13 @@ const HeroSection = () => {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5, type: "spring", delay: 1.5 }}
           >
-            Say Hi,
+            Let's Connect,
             <BackHandIcon className="hi hand-icon" />
           </motion.a>
         </div>
 
         <div className="img-box">
-          <img src={myImg}
-            alt="Asia Ashraf"
-            data-aos="zoom-in"
-
-          />
+          <img src={myImg} alt="Asia Ashraf" data-aos="zoom-in" />
         </div>
       </div>
     </div>
