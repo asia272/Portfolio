@@ -8,16 +8,16 @@ const Projects = () => {
   const [projects, setProjects] = useState(data);
   const [activeBtn, setActiveBtn] = useState("all");
 
-  let findProject = (tecnology) => {
-    setActiveBtn(tecnology);
-    if (tecnology === "all") {
+  let findProject = (type) => {
+    setActiveBtn(type);
+    if (type === "all") {
       setProjects(data);
     } else {
-      const foundItems = data.filter(pro => pro.tec_use === tecnology);
+      const foundItems = data.filter(pro => pro.type === type);
       setProjects(foundItems);
     }
   }
-
+  
   return (
     <div className='projects section' id='projects' data-aos="fade-up">
       <div className="section-heading">

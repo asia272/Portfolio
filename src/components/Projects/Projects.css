@@ -1,93 +1,88 @@
-/* Projects Section */
+/* ================= Projects Section ================= */
 .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 3rem;
 }
 
-/* Button Box */
+/* ================= Button Box ================= */
 .btn-box {
     display: flex;
-    gap: 0.6rem;
-    /* flex-wrap: wrap; */
-    width: 100%;
     justify-content: center;
-    padding: 0.88rem;
-    /* background-color: red; */
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.8rem;
+    flex-wrap: wrap;
 }
 
-/* Project Buttons */
+/* ================= Project Buttons ================= */
 .projectBtn {
-    padding: 0.8rem 1.88rem;
-    font-weight: bold;
+    padding: 0.7rem 1.6rem;
+    font-weight: 600;
     cursor: pointer;
-    background-color: var(--body-bg);
+    background: var(--body-bg);
     color: var(--body-text);
     border: 1px solid var(--hight-light-color);
-    margin: 0 !important;
-    line-height: 1;
-    margin-bottom: 0.68rem !important;
-    border-radius: 1.33rem !important;
+    border-radius: 1.3rem;
+    transition: all 0.25s ease;
 }
 
 .projectBtn:hover {
-    border: 1px solid var(--hight-light-color);
     color: var(--hight-light-color);
-    border-radius: 1.33rem !important;
-
+    border-color: var(--hight-light-color);
 }
 
 .activeBtn {
-    background-color: var(--purple);
-    color: white;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 0.68rem !important;
-
+    background: var(--purple);
+    color: #fff;
 }
 
-/* Card Container */
+/* ================= Card Container ================= */
 .card-container {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 4rem;
+    align-items: stretch;
+    gap: 2.5rem;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
 
-/* Individual Project Card */
+/* ================= Project Card ================= */
 .cardBox {
     position: relative;
+min-width: 280px;
+    min-height: 320px;
     padding: 3px;
     border-radius: 12px;
-    animation: spin 3s linear infinite;
     z-index: 0;
-    width: 230px;
-    max-width: 230px;
-    min-height: 320px;
-}
-.cardBox:hover{
-    transform: matrix(0,1,1,0,0,0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Animated border */
 .cardBox::before {
     content: "";
     position: absolute;
     inset: 0;
     border-radius: inherit;
-     background: conic-gradient(from var(--angle),
-            var(--body-bg),
-            var(--skill-bg),
-            var(--purple));
-
-   
+    background: conic-gradient(
+        from var(--angle),
+        var(--body-bg),
+        var(--skill-bg),
+        var(--purple)
+    );
     z-index: -1;
-    animation: spin 3s linear infinite;
+    animation: spin 4s linear infinite;
 }
 
+/* Smooth hover (removed broken matrix transform) */
+.cardBox:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ================= Card Inner ================= */
 .card-content-wrapper {
     background: var(--skill-bg);
     border-radius: 10px;
@@ -97,105 +92,87 @@
     flex-direction: column;
 }
 
+/* ================= Animation ================= */
 @property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
 }
 
-
 @keyframes spin {
-    0% {
-        --angle: 0deg;
-    }
-
-    100% {
-        --angle: 360deg;
-    }
+    from { --angle: 0deg; }
+    to { --angle: 360deg; }
 }
 
-
-
-/* Card Image */
+/* ================= Card Image ================= */
 .cardBox img {
     width: 100%;
-    max-height: 180px;
+    height: 180px;
     object-fit: cover;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
 }
 
-/* Card Hover Effect */
-.cardBox:hover {
-    transform: scale(1.05);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Card Content */
+/* ================= Card Content ================= */
 .cardContent {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
-    height: 100%;
     text-align: center;
+    flex: 1;
 }
 
-/* Project Title */
+/* Title */
 .cardContent h3 {
-    font-size: 1.2rem;
-    color: var(--black);
+    font-size: 1.1rem;
     color: var(--purple);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-/* Explore Button */
+/* ================= Buttons ================= */
 .cardContent a {
-    text-align: center;
-    background-color: var(--hight-light-color);
-    background-color: var(--skill-bg);
-    border: 1px solid var(--body-text);
-    padding: 8px 12px;
-    margin-top: 10px;
-    border-radius: 1.55rem;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease, color 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6px;
+
+    padding: 8px 12px;
+    margin-top: 10px;
+
+    border-radius: 1.5rem;
+    border: 1px solid var(--body-text);
+
+    background: var(--skill-bg);
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
 }
 
 .cardContent a:hover {
-    background-color: var(--hight-light-color);
-    color: var(--body-text);
-    color: white;
-    background-color: purple;
-    border: none;
+    background: var(--purple);
+    color: #fff;
+    border-color: var(--purple);
 }
 
-.cardContent a .arrowIcon {
-    transition: transform 0.3s ease-in-out;
+/* Arrow Animation */
+.arrowIcon {
+    transition: transform 0.25s ease;
 }
 
-.cardContent a .arrowIcon:hover {
-    transform: translate(5px, 0);
+.cardContent a:hover .arrowIcon {
+    transform: translateX(5px);
 }
 
-/* Responsive Design */
+/* ================= Responsive ================= */
 @media (max-width: 768px) {
-    .btn-box {
-        flex-wrap: wrap;
-    }
-
-    .cardBox {
-        max-width: 100%;
-    }
-}
-
-@media(max-width:557px) {
     .cardBox {
         width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 557px) {
+    .card-container {
+        gap: 1.5rem;
     }
 }
