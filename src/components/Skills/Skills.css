@@ -1,60 +1,169 @@
 .skills-section {
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
-  }
-  .skills-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    max-width: 700px;
-  }
-  
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  gap: 1rem;
+}
+
+
+.section-heading {
+  text-align: center;
+}
+
+.section-heading h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--body-text);
+}
+
+.section-heading p {
+  font-size: 1rem;
+  color: var(--purple);
+  margin-top: 8px;
+}
+
+.skills-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.skills-category {
+  text-align: center;
+}
+
+.category-title {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: var(--main-color);
+  position: relative;
+}
+
+/* underline effect */
+.category-title::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--main-color);
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+.skills-icons div {
+  position: relative;
+  width: 250px;
+  height: 120px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--skill-bg);
+  border-radius: 12px;
+
+  color: var(--body-text);
+  font-size: 2rem;
+  font-weight: bold;
+
+  box-shadow: 0 2px 0 var(--skill-shadow);
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.skills-icons div:hover {
+  transform: translateY(-10px) scale(1.08);
+  background: var(--body-bg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.skills-icons div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+    background: linear-gradient(
+    120deg,
+    transparent,
+    var(--purple),
+    transparent
+  );
+  opacity: 0.3;
+  transition: 0.6s;
+}
+
+.skills-icons div:hover::before {
+  left: 100%;
+}
+
+
+.skills-icons div span {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  color: var(--purple);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
   .skills-icons div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 120px;
-    background-color: var(--skill-bg);
-    border-radius: 10px;
-    color:var(--body-text);
-    font-size: 2rem;
-    font-weight: bold;
-    box-shadow: 0px 2px 0px var(--skill-shadow);
-    transition: all 0.2s ease-in;
-    cursor: pointer;
-  }
-  
-  .skills-icons div:hover {
-
-    background-color: var(--body-bg);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
-    transform: rotate(360deg) scale(1.2)  !important;
+    width: 110px;
+    height: 110px;
+    font-size: 1.5rem;
   }
 
-  
-  .skills-icons div span {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    color:var(--purple);
+.skills-icons div span {
+  font-size: 0.9rem;
+}
+  .section-heading h2 {
+    font-size: 1.8rem;
   }
-  .skills-icons p{
-    color: var(--body-text);
-  }
+}
 
-  @media (max-width: 768px) {
-    .skills-icons div {
-      width: 130px;
-      height: 130px;
-      font-size: 1.5rem;
-    }
+.skills-filter {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
-  }
-  
+.skills-filter button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+
+  border-radius: 20px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.skills-filter button:hover {
+  transform: scale(1.05);
+}
+
+.skills-filter .active {
+  background: var(--purple);
+  color: white;
+}

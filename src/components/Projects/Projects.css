@@ -1,12 +1,11 @@
-/* ================= Projects Section ================= */
+
 .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
 }
 
-/* ================= Button Box ================= */
 .btn-box {
     display: flex;
     justify-content: center;
@@ -15,22 +14,23 @@
     padding: 0.8rem;
     flex-wrap: wrap;
 }
-
-/* ================= Project Buttons ================= */
 .projectBtn {
-    padding: 0.7rem 1.6rem;
-    font-weight: 600;
-    cursor: pointer;
-    background: var(--body-bg);
-    color: var(--body-text);
-    border: 1px solid var(--hight-light-color);
-    border-radius: 1.3rem;
-    transition: all 0.25s ease;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+
+  border-radius: 20px;
+  transition: 0.3s;
+  font-weight: 500;
+
 }
 
 .projectBtn:hover {
     color: var(--hight-light-color);
     border-color: var(--hight-light-color);
+  
+  transform: scale(1.05);
+
 }
 
 .activeBtn {
@@ -38,7 +38,7 @@
     color: #fff;
 }
 
-/* ================= Card Container ================= */
+
 .card-container {
     width: 100%;
     display: flex;
@@ -49,7 +49,7 @@
     margin-top: 2rem;
 }
 
-/* ================= Project Card ================= */
+
 .cardBox {
     position: relative;
 min-width: 280px;
