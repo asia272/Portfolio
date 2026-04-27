@@ -1,17 +1,12 @@
 import toDo_URL from "../../assets/todo.png";
-import lotteryGame_URL from "../../assets/lottery-game.png";
 import weaterapp_URL from "../../assets/preview.jpg"
 import airtel_URl from "../../assets/airtel.png"
-import gussingNumberGame from "../../assets/gussing number game.png"
-import quoteImg from "../../assets/quote.png";
-import simonGame from "../../assets/simonGame.png";
 import paste_app from "../../assets/paste-app.png";
-import age_calculater from "../../assets/age_calculater.jpg";
-import calculater from "../../assets/calculater.jpg";
 import e_commerce_site from "../../assets/desktop-preview.jpg"
 import social_app from "../../assets/social-media-application.png";
-export const data = [
+import feedback_app from "../../assets/feedback.jpeg";
 
+export const data = [
   {
     id: 0,
     name: "Social Media Application",
@@ -20,8 +15,17 @@ export const data = [
     site: "https://full-stack-social-media-application.vercel.app/",
     type: "fullstack",
   },
+
   {
-    id: 1,
+    id: 2,
+    name: "Feedback Fusion application",
+    img: feedback_app,
+    link: "https://github.com/asia272/NextJS_POSTGRES_Clerk_FullStack_Project",
+    site: "https://next-js-postgres-clerk-full-stack-p.vercel.app/",
+    type: "fullstack",
+  },
+  {
+    id: 3,
     name: "Weather App",
     img: weaterapp_URL,
     link: "https://github.com/asia272/weather-app",
@@ -29,7 +33,7 @@ export const data = [
     type: "frontend",
   },
   {
-    id: 2,
+    id: 4,
     name: "Todo App",
     img: toDo_URL,
     site: "https://frontend-mentor-mauve.vercel.app/react-projects/intermediate/todo-app/",
@@ -37,7 +41,7 @@ export const data = [
     type: "frontend",
   },
   {
-    id: 3,
+    id: 5,
     name: "Paste App",
     img: paste_app,
     link: "https://github.com/asia272/React-Paste-App",
@@ -46,7 +50,7 @@ export const data = [
   },
 
   {
-    id: 4,
+    id: 6,
     name: "E-commerce Page",
     img: e_commerce_site,
     site: "https://frontend-mentor-mauve.vercel.app/react-projects/intermediate/e-commerce-product-page/#",
@@ -54,7 +58,7 @@ export const data = [
     type: "frontend",
   },
   {
-    id: 5,
+    id: 7,
     name: "Airtel website",
     img: airtel_URl,
     link: "https://github.com/asia272/Airtel-clone",
