@@ -9,10 +9,10 @@ import feedback_app from "../../assets/feedback.jpeg";
 export const data = [
   {
     id: 0,
-    name: "Social Media Application",
+    name: "DevConnect Platform",
     img: social_app,
     link: "https://github.com/asia272/full-stack-social-media-application",
-    site: "https://full-stack-social-media-application.vercel.app/",
+    site: "https://devconnect-platform-six.vercel.app/",
     type: "fullstack",
   },
 
@@ -67,13 +67,13 @@ export const data = [
   },
 ];
 export const projectBtn = [
-    {
-        btn: "all"
-    },
-    {
-        btn: "frontend",
-    },
-    {
-        btn: "fullstack"
-    }
+  {
+    btn: "all"
+  },
+  {
+    btn: "frontend",
+  },
+  {
+    btn: "fullstack"
+  }
 ]
