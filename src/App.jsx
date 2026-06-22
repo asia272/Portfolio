@@ -11,6 +11,7 @@ import Contact from "./components/Contact/Contact"
 import Overlay from './components/Overlay/Overlay';
 import Scroll from './components/ScrollAnimate/Scroll';
 import Preloader from './components/Preloader/Preloader';
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -45,6 +46,7 @@ function App() {
           <Overlay />
         </>
       )}
+      <Analytics />
     </>
   );
 
