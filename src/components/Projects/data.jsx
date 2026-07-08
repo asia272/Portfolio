@@ -5,6 +5,7 @@ import paste_app from "../../assets/paste-app.png";
 import e_commerce_site from "../../assets/desktop-preview.jpg"
 import social_app from "../../assets/social-media-application.png";
 import feedback_app from "../../assets/feedback.jpeg";
+import interview_Platform from "../../assets/interview-platform.png";
 
 export const data = [
   {
@@ -18,7 +19,7 @@ export const data = [
 
   {
     id: 2,
-    name: "Feedback Fusion application",
+    name: "Feedback Fusion Application",
     img: feedback_app,
     link: "https://github.com/asia272/NextJS_POSTGRES_Clerk_FullStack_Project",
     site: "https://next-js-postgres-clerk-full-stack-p.vercel.app/",
@@ -26,6 +27,14 @@ export const data = [
   },
   {
     id: 3,
+    name: "Video Calling Interview Platform",
+    img: interview_Platform,
+    link: "https://github.com/asia272/Video-Calling-Interview-Platform",
+    site: "https://video-calling-interview-platform-nine.vercel.app/",
+    type: "fullstack",
+  },
+  {
+    id: 4,
     name: "Weather App",
     img: weaterapp_URL,
     link: "https://github.com/asia272/weather-app",
@@ -33,7 +42,7 @@ export const data = [
     type: "frontend",
   },
   {
-    id: 4,
+    id: 5,
     name: "Todo App",
     img: toDo_URL,
     site: "https://frontend-mentor-mauve.vercel.app/react-projects/intermediate/todo-app/",
@@ -41,7 +50,7 @@ export const data = [
     type: "frontend",
   },
   {
-    id: 5,
+    id: 6,
     name: "Paste App",
     img: paste_app,
     link: "https://github.com/asia272/React-Paste-App",
@@ -50,7 +59,7 @@ export const data = [
   },
 
   {
-    id: 6,
+    id: 7,
     name: "E-commerce Page",
     img: e_commerce_site,
     site: "https://frontend-mentor-mauve.vercel.app/react-projects/intermediate/e-commerce-product-page/#",
@@ -58,7 +67,7 @@ export const data = [
     type: "frontend",
   },
   {
-    id: 7,
+    id: 8,
     name: "Airtel website",
     img: airtel_URl,
     link: "https://github.com/asia272/Airtel-clone",
