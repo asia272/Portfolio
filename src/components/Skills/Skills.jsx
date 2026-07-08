@@ -70,8 +70,7 @@ const Skills = () => {
         {["All", "frontend", "backend", "database", "auth"].map((tab, index) => (
           <button
             key={tab}
-            data-aos="fade-up"
-            data-aos-delay={index * 100}
+
             onClick={() => setActiveTab(tab)}
             className={activeTab === tab ? "active" : ""}
           >
