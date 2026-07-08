@@ -67,10 +67,11 @@ const Skills = () => {
       </div>
 
       <div className="skills-filter">
-        {["All", "frontend", "backend", "database", "auth"].map((tab) => (
+        {["All", "frontend", "backend", "database", "auth"].map((tab, index) => (
           <button
             key={tab}
-            data-aos="zoom-out"
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
             onClick={() => setActiveTab(tab)}
             className={activeTab === tab ? "active" : ""}
           >
